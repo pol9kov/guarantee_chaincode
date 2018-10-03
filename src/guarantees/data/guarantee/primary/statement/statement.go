@@ -15,9 +15,33 @@ const (
 	KEY = "STATEMENT"
 )
 
+func CanChangeStatusOn(oldStatus, newStatus string) bool {
+	var statusMap = make(map[string][]string)
+	statusMap["validationErr"] = []string{"validationErr", "created", "cancelled"}
+	statusMap["created"] = []string{"validationErr", "created", "cancelled", "sent"}
+	statusMap["cancelled"] = []string{}
+	statusMap["sent"] = []string{"inProgress", "revoked"}
+	statusMap["inProgress"] = []string{"unsigned", "rejected", "finished", "revoked"}
+	statusMap["unsigned"] = []string{"validationErr", "created", "revoked"}
+	statusMap["rejected"] = []string{}
+	statusMap["finished"] = []string{}
+	statusMap["revoked"] = []string{}
+
+	for _, status := range statusMap[oldStatus] {
+		if status == newStatus {
+			return true
+		}
+	}
+
+	return false
+}
+
 func (statement Statement) CanBeChangedOn(newStatementInterface interface{}) bool {
 	newStatement := newStatementInterface.(*Statement)
 	valid := true
+
+	valid = valid &&
+		CanChangeStatusOn(statement.Status, newStatement.Status)
 
 	valid = valid &&
 		newStatement.Id == statement.Id &&

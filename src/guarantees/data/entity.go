@@ -9,6 +9,7 @@ import (
 	"guarantees/data/guarantee/additional/gtype"
 	"guarantees/data/guarantee/additional/guarantor"
 	"guarantees/data/guarantee/additional/organization"
+	"guarantees/data/guarantee/additional/rtype"
 	"guarantees/data/guarantee/primary/guarantee"
 	"guarantees/data/guarantee/primary/requirement"
 	"guarantees/data/guarantee/primary/rrequirement"
@@ -171,6 +172,9 @@ func GetEntityByName(name string) (Entity, peer.Response) {
 		break
 	case gtype.ENTITY_NAME:
 		entity = (Entity)(&gtype.GType{})
+		break
+	case rtype.ENTITY_NAME:
+		entity = (Entity)(&rtype.RType{})
 		break
 	case bankpars.ENTITY_NAME:
 		entity = (Entity)(&bankpars.BankPars{})

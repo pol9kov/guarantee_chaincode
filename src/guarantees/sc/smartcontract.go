@@ -115,8 +115,11 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 		return com.SuccessPayloadResponse(data.EntitiesToOut(entity, entities))
 	}
 
-	if function == "create" {
-		if request.Type == "OutOfRelation" {
+	switch function {
+
+	case "create":
+		switch request.Type {
+		case "OutOfRelation":
 			if len(args) != 1 {
 				return com.IncorrectNumberOfArgsError(args, 1)
 			}
@@ -126,8 +129,7 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 			}
 
 			return data.Put(entity, APIstub)
-		}
-		if request.Type == "FromRelationId" {
+		case "FromRelationId":
 			if len(args) != 2 {
 				return com.IncorrectNumberOfArgsError(args, 2)
 			}
@@ -144,10 +146,10 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 			return data.Put(entity, APIstub)
 
 		}
-	}
 
-	if function == "edit" {
-		if request.Type == "AllFields" {
+	case "edit":
+		switch request.Type {
+		case "AllFields":
 			if len(args) != 1 {
 				return com.IncorrectNumberOfArgsError(args, 1)
 			}
@@ -157,9 +159,10 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 				return com.UnmarshalError(err, args[0])
 			}
 			return data.EditAll(entity, APIstub)
-		}
-		if request.Type == "Fields" {
-			if request.TypeAttr == "ById" {
+
+		case "Fields":
+			switch request.TypeAttr {
+			case "ById":
 				if len(args) != 1 {
 					return com.IncorrectNumberOfArgsError(args, 1)
 				}
@@ -169,8 +172,8 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 					return com.IncorectNumberOfFieldsError(len(request.FieldPaths), len(request.FieldValues))
 				}
 				return data.EditFieldsById(entity, APIstub, request.FieldPaths, request.FieldValues)
-			}
-			if request.TypeAttr == "ByRelationId" {
+
+			case "ByRelationId":
 				if len(args) != 1 {
 					return com.IncorrectNumberOfArgsError(args, 1)
 				}
@@ -182,13 +185,12 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 				return data.EditFieldsById(entity, APIstub, request.FieldPaths, request.FieldValues)
 			}
 		}
-	}
 
-	if function == "query" {
-		if request.Type == "All" {
+	case "query":
+		switch request.Type {
+		case "All":
 			return data.QueryAll(entity, APIstub)
-		}
-		if request.Type == "By" {
+		case "By":
 			switch request.TypeAttr {
 			case "Id":
 				if len(args) != 1 {

@@ -27,9 +27,31 @@ func (guarantee Guarantee) GetIndexes() [][]string {
 	}
 }
 
+func CanChangeStatusOn(oldStatus, newStatus string) bool {
+	var statusMap = make(map[string][]string)
+	statusMap["validationErr"] = []string{"validationErr", "created", "readyToSign"}
+	statusMap["created"] = []string{"validationErr", "created", "readyToSign", "issued"}
+	statusMap["readyToSign"] = []string{}
+	statusMap["issued"] = []string{"requirementReceived"}
+	statusMap["requirementReceived"] = []string{"issued", "closed", "wavedOfRights"}
+	statusMap["closed"] = []string{"validationErr", "created"}
+	statusMap["wavedOfRights"] = []string{}
+
+	for _, status := range statusMap[oldStatus] {
+		if status == newStatus {
+			return true
+		}
+	}
+
+	return false
+}
+
 func (guarantee Guarantee) CanBeChangedOn(newGuaranteeInterface interface{}) bool {
 	newGuarantee := newGuaranteeInterface.(*Guarantee)
 	valid := true
+
+	valid = valid &&
+		CanChangeStatusOn(guarantee.Status, newGuarantee.Status)
 
 	valid = valid &&
 		newGuarantee.Id == guarantee.Id &&
