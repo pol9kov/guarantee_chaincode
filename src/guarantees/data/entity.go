@@ -9,8 +9,12 @@ import (
 	"guarantees/data/guarantee/additional/gtype"
 	"guarantees/data/guarantee/additional/guarantor"
 	"guarantees/data/guarantee/additional/organization"
+	"guarantees/data/guarantee/additional/rejtype"
 	"guarantees/data/guarantee/additional/rtype"
+	"guarantees/data/guarantee/primary/document"
 	"guarantees/data/guarantee/primary/guarantee"
+	"guarantees/data/guarantee/primary/part"
+	"guarantees/data/guarantee/primary/reject"
 	"guarantees/data/guarantee/primary/requirement"
 	"guarantees/data/guarantee/primary/rrequirement"
 	"guarantees/data/guarantee/primary/statement"
@@ -176,8 +180,20 @@ func GetEntityByName(name string) (Entity, peer.Response) {
 	case rtype.ENTITY_NAME:
 		entity = (Entity)(&rtype.RType{})
 		break
+	case rejtype.ENTITY_NAME:
+		entity = (Entity)(&rejtype.RejType{})
+		break
 	case bankpars.ENTITY_NAME:
 		entity = (Entity)(&bankpars.BankPars{})
+		break
+	case part.ENTITY_NAME:
+		entity = (Entity)(&part.Part{})
+		break
+	case document.ENTITY_NAME:
+		entity = (Entity)(&document.Document{})
+		break
+	case reject.ENTITY_NAME:
+		entity = (Entity)(&reject.Reject{})
 		break
 	case statement.ENTITY_NAME:
 		entity = (Entity)(&statement.Statement{})

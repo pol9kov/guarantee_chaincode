@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3c11c1-a5fa-4937-a442-b20b1f38f36f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/rejtype.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/document/document.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/document/struct.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/part.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/struct.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/struct.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/guarantees/data/entity.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/entity.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/guarantee/guarantee.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/guarantee/guarantee.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/requirement.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/requirement.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/statement/statement.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/statement/statement.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guarantees/sc/smartcontract.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/sc/smartcontract.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/struct.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/struct.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="27688" />
+    <option name="totalTimeSeconds" value="28526" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1951042272">
@@ -40,46 +29,47 @@
           <entry key="project.open.time.3" value="4" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="LICENSE" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="go" value="596" />
+          <entry key="go" value="604" />
           <entry key="java" value="1" />
           <entry key="json" value="1" />
           <entry key="sh" value="1" />
-          <entry key="xml" value="43" />
+          <entry key="xml" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="1" />
           <entry key="Git file" value="1" />
-          <entry key="Go" value="596" />
+          <entry key="Go" value="604" />
           <entry key="JAVA" value="1" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="43" />
+          <entry key="XML" value="44" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="9554" />
+          <entry key="go" value="9604" />
           <entry key="json" value="1" />
-          <entry key="txt" value="837" />
-          <entry key="xml" value="101" />
+          <entry key="txt" value="878" />
+          <entry key="xml" value="104" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="9554" />
+          <entry key="Go" value="9604" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="837" />
-          <entry key="XML" value="101" />
+          <entry key="PLAIN_TEXT" value="878" />
+          <entry key="XML" value="104" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -105,46 +95,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/document/document.go">
+        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/struct.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="558">
+              <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="37" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/part.go">
+        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/gtype/struct.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/struct.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/rejtype.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="360">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="27" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -152,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="486">
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <element signature="e#17#83#0" expanded="true" />
               </folding>
@@ -161,11 +124,44 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/struct.go">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guarantees_test/requirement_test.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="158">
+              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/requirement.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/struct.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="38" column="73" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/guarantees_test/testdata/entities/requirement.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
+              <folding>
+                <element signature="n#beneficiary#0;n#requirement_signed#0;n#requirement#0;n#!!top" />
+                <element signature="n#organization#0;n#beneficiary#0;n#requirement_signed#0;n#requirement#0;n#!!top" />
+                <element signature="n#principal#0;n#requirement_signed#0;n#requirement#0;n#!!top" />
+                <element signature="n#guarantor#0;n#requirement_signed#0;n#requirement#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -274,7 +270,6 @@
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/guarantee/struct.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/rrequirement/requirement.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/rrequirement/struct.go" />
-        <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/struct.go" />
         <option value="$PROJECT_DIR$/src/guarantees_test/testdata/entities/requirement_out.xml" />
         <option value="$PROJECT_DIR$/src/guarantees_test/testdata/entities/requirement_out2.xml" />
         <option value="$PROJECT_DIR$/src/guarantees_test/requirement_test.go" />
@@ -285,7 +280,6 @@
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/doc/struct.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/struct.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/invoke.go" />
-        <option value="$PROJECT_DIR$/src/guarantees_test/testdata/entities/requirement.xml" />
         <option value="$PROJECT_DIR$/src/guarantees/sc/guarantee.go" />
         <option value="$PROJECT_DIR$/src/guarantees_test/guarantee_test.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/rrequirement/rrequirement.go" />
@@ -309,11 +303,13 @@
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/document/document.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/document/struct.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/struct.go" />
-        <option value="$PROJECT_DIR$/src/guarantees/data/entity.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/regtype.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/rejtype.go" />
-        <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/struct.go" />
+        <option value="$PROJECT_DIR$/src/guarantees/data/entity.go" />
+        <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/struct.go" />
+        <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go" />
+        <option value="$PROJECT_DIR$/src/guarantees_test/testdata/entities/requirement.xml" />
       </list>
     </option>
   </component>
@@ -400,6 +396,16 @@
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="guarantee" type="462c0819:PsiDirectoryNode" />
               <item name="additional" type="462c0819:PsiDirectoryNode" />
+              <item name="gtype" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guarantees" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="guarantee" type="462c0819:PsiDirectoryNode" />
+              <item name="additional" type="462c0819:PsiDirectoryNode" />
               <item name="rejtype" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -429,53 +435,28 @@
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="guarantee" type="462c0819:PsiDirectoryNode" />
               <item name="primary" type="462c0819:PsiDirectoryNode" />
-              <item name="document" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guarantees" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="guarantee" type="462c0819:PsiDirectoryNode" />
-              <item name="primary" type="462c0819:PsiDirectoryNode" />
-              <item name="guarantee" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guarantees" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="guarantee" type="462c0819:PsiDirectoryNode" />
-              <item name="primary" type="462c0819:PsiDirectoryNode" />
-              <item name="part" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guarantees" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="guarantee" type="462c0819:PsiDirectoryNode" />
-              <item name="primary" type="462c0819:PsiDirectoryNode" />
-              <item name="reject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guarantees" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="guarantee" type="462c0819:PsiDirectoryNode" />
-              <item name="primary" type="462c0819:PsiDirectoryNode" />
-              <item name="rrequirement" type="462c0819:PsiDirectoryNode" />
+              <item name="requirement" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
               <item name="chaincode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guarantees_test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guarantees_test" type="462c0819:PsiDirectoryNode" />
+              <item name="testdata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guarantees_test" type="462c0819:PsiDirectoryNode" />
+              <item name="testdata" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
@@ -491,9 +472,9 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/src/guarantees_test/gtype_test.go&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees/sc/guarantee.go&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees/sc/smartcontract.go" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/src/guarantees_test/gtype_test.go&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees_test/testdata/entities/requirement.xml&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees/sc/guarantee.go&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees/sc/smartcontract.go" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538571959465" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538655626398" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -625,7 +606,8 @@
       <workItem from="1537774562736" duration="9286000" />
       <workItem from="1537949108063" duration="4133000" />
       <workItem from="1538040366382" duration="5021000" />
-      <workItem from="1538133804836" duration="14282000" />
+      <workItem from="1538133804836" duration="14378000" />
+      <workItem from="1538645897061" duration="1160000" />
     </task>
     <task id="LOCAL-00001" summary="Add method editGuaranteeFieldStatusAndIssueDate to CC">
       <created>1534427064181</created>
@@ -809,13 +791,17 @@
       <option name="project" value="LOCAL" />
       <updated>1537554195498</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add docs with parts, regects with types">
+      <created>1538572070851</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1538572070851</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="go_test_guarantees_test - 2018.09.21 at 21h 14m 15s.xml">
-      <configuration name="go test guarantees_test" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="go_test_guarantees_test - 2018.09.21 at 21h 14m 27s.xml">
       <configuration name="go test guarantees_test" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -843,9 +829,12 @@
     <history-entry file="go_test_guarantees_test - 2018.09.24 at 12h 32m 11s.xml">
       <configuration name="go test guarantees_test" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="go_test_guarantees_test - 2018.10.03 at 16h 07m 01s.xml">
+      <configuration name="go test guarantees_test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="184205000" />
+    <option name="totallyTimeSpent" value="185461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -860,7 +849,7 @@
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1779989" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25981206" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -871,7 +860,7 @@
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32867885" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.28033474" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.41527197" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -938,7 +927,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Add method editGuaranteeFieldStatusAndIssueDate to CC" />
     <MESSAGE value="Commit workspace" />
     <MESSAGE value="Edited cc_tests" />
     <MESSAGE value="Add method editGuaranteeFieldBankParsAndStatus" />
@@ -963,7 +951,8 @@
     <MESSAGE value="Added Validation on fields" />
     <MESSAGE value="Change status to validationErr" />
     <MESSAGE value="Init objects validation. todo: status validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init objects validation. todo: status validation" />
+    <MESSAGE value="add docs with parts, regects with types" />
+    <option name="LAST_COMMIT_MESSAGE" value="add docs with parts, regects with types" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -1027,20 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="831">
           <caret line="122" column="18" lean-forward="true" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees_test/testdata/entities/requirement.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees_test/requirement_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -1134,13 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/gtype/struct.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1182,13 +1150,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/gtype/gtype.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/sc/smartcontract.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1217,55 +1178,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/requirement.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/struct.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="13" column="35" lean-forward="true" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/rtype.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/entity.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="180" column="13" lean-forward="true" selection-start-line="180" selection-start-column="13" selection-end-line="180" selection-end-column="13" />
-          <folding>
-            <element signature="e#14#578#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/document/document.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/part.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/struct.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -1279,41 +1195,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/struct.go">
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/part.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="19" selection-end-column="49" />
+        <state relative-caret-position="432">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go">
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/struct.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="e#17#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/rejtype.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="306">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="324">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/struct.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/document/document.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/rejtype.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/entity.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="249" column="5" lean-forward="true" selection-start-line="249" selection-start-column="5" selection-end-line="249" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/gtype/gtype.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/gtype/struct.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="27" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/struct.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="37" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding>
+            <element signature="e#17#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees_test/requirement_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/requirement.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="46" column="31" lean-forward="true" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/struct.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="38" column="73" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees_test/testdata/entities/requirement.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="60" column="12" selection-start-line="60" selection-start-column="12" selection-end-line="60" selection-end-column="12" />
+          <folding>
+            <element signature="n#beneficiary#0;n#requirement_signed#0;n#requirement#0;n#!!top" />
+            <element signature="n#organization#0;n#beneficiary#0;n#requirement_signed#0;n#requirement#0;n#!!top" />
+            <element signature="n#principal#0;n#requirement_signed#0;n#requirement#0;n#!!top" />
+            <element signature="n#guarantor#0;n#requirement_signed#0;n#requirement#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
