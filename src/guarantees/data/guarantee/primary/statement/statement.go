@@ -2,6 +2,7 @@ package statement
 
 import (
 	"encoding/xml"
+	"regexp"
 )
 
 const (
@@ -64,7 +65,13 @@ func (statement Statement) CanBeChangedOn(newStatementInterface interface{}) boo
 			string(newSS) == string(oldSS)
 	}
 
-	//todo status changes
+	for _, par := range statement.StatementSigned.GType.Pars {
+		match, err := regexp.MatchString(par.RegularExpression, par.Value)
+		if err != nil {
+			return false
+		}
+		valid = valid && match
+	}
 
 	return valid
 }
