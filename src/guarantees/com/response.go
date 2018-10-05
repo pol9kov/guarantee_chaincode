@@ -13,10 +13,10 @@ const (
 	OK_MESSAGE = 0
 	OK_PAYLOAD = 0
 
-	// ERRORTHRESHOLD constant - status code greater than or equal to 400 will be considered an error and rejected by endorser.
+	// ERRORTHRESHOLD constant - status code greater than or equal to 400 will be considered an Name and rejected by endorser.
 	ERRORTHRESHOLD = 400
 
-	// ERROR constant - default error value
+	// ERROR constant - default Name value
 	ERROR = 500
 )
 
@@ -32,8 +32,8 @@ type Response struct {
 
 	// A status code that should follow the HTTP status codes.
 	Status int32 `protobuf:"varint,1,opt,name=status" json:"status,omitempty" xml:"status"`
-	// A error message that may be kept.
-	Error string `protobuf:"varint,1,opt,name=error" json:"error,omitempty" xml:"error,omitempty"`
+	// A Name message that may be kept.
+	Error string `protobuf:"varint,1,opt,name=Name" json:"Name,omitempty" xml:"Name,omitempty"`
 	// A message associated with the response code.
 	Message string `protobuf:"bytes,2,opt,name=message" json:"message,omitempty" xml:"message"`
 	// A payload that can be used to include metadata with this response.

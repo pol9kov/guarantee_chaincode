@@ -19,6 +19,7 @@ import (
 	"guarantees/data/guarantee/primary/rrequirement"
 	"guarantees/data/guarantee/primary/statement"
 	"guarantees/funcs"
+	"io"
 	"reflect"
 	"strconv"
 )
@@ -222,9 +223,36 @@ type Entities struct {
 	Entities []Entity `xml:",any"`
 }
 
+func (entities *Entities) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error {
+
+	com.DebugLogMsg("Name start local: " + start.Name.Local)
+	com.DebugLogMsg("Name XMLName local: " + entities.XMLName.Local)
+
+	if start.Name.Local == entities.XMLName.Local {
+		for {
+			token, err := d.Token()
+			if err == io.EOF {
+				break
+			}
+
+			switch tt := token.(type) {
+			case xml.StartElement:
+				entity, response := GetEntityByName(entities.XMLName.Local)
+				if response.Status >= com.ERRORTHRESHOLD {
+					return com.CCError{"NoSuchCaseOfEntityError"}
+				}
+				if err := d.DecodeElement(entity, &tt); err != nil {
+					return com.CCError{"DecodeElementError"}
+				}
+				entities.Entities = append(entities.Entities, entity)
+			}
+		}
+		return nil
+	}
+	return com.CCError{"EntitiesTagError"}
+}
+
 func XmlBytesToEntitiesArr(entity Entity, xmlBytes []byte) ([]Entity, peer.Response) {
-	element := com.FPath.Path.PushBack("XmlBytesToEntitiesArr")
-	defer com.FPath.Path.Remove(element)
 
 	entities := Entities{
 		XMLName: xml.Name{Local: entity.GetTagName()}}
@@ -246,7 +274,6 @@ func EntitiesToOut(entity Entity, entities []Entity) interface{} {
 		XMLName     xml.Name
 		EntitiesOut []interface{}
 	}
-
 	entitiesOut := make([]interface{}, len(entities))
 	entityArr := EntityArr{
 		XMLName:     xml.Name{Local: entity.GetTagName()}, //+"s" },

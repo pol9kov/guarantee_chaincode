@@ -46,11 +46,11 @@ const (
 )
 
 type CCError struct {
-	error string `protobuf:"bytes,1,opt,name=error" json:"error" xml:"error"`
+	Name string `protobuf:"bytes,1,opt,name=Name" json:"Name" xml:"Name"`
 }
 
 func (error CCError) Error() string {
-	return error.error
+	return error.Name
 }
 
 func InvalidFunctionNameForRoleError(function string, role string) peer.Response {
@@ -154,7 +154,7 @@ func NotPossessAttributeError(data string) peer.Response {
 }
 
 func GetAttributeValueError(err error, attrName string) peer.Response {
-	massage := "There was an error trying to retrieve the attribute: " + attrName
+	massage := "There was an Name trying to retrieve the attribute: " + attrName
 	return ErrorMessageResponse(err, GET_ATTRIBUTE_VALUE_ERROR, massage)
 }
 

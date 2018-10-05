@@ -94,22 +94,41 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 	if len(request.Channels) > 0 {
 		requestWithoutChannels := request
 		requestWithoutChannels.Channels = []string{}
+
+		//requestWithoutChannels.Args = []string{}
+
 		requestWithoutChannelsAsBytes, err := xml.Marshal(requestWithoutChannels)
+		com.DebugLogMsg("Marshaled request: " + string(requestWithoutChannelsAsBytes))
 		if err != nil {
 			return com.MarshalError(err)
 		}
 		var entities []data.Entity
 		for _, channelName := range request.Channels {
-			response := APIstub.InvokeChaincode("guarantees_cc", [][]byte{[]byte(function), requestWithoutChannelsAsBytes}, channelName)
-			if response.Status >= com.ERRORTHRESHOLD {
-				com.ErrorLogMsg(nil, response.Status, "Error on invoke channel "+channelName)
-				return response
+			com.DebugLogMsg("Invoke to channel: " + channelName)
+			com.DebugLogMsg(APIstub.GetChannelID())
+
+			sdkResponse := APIstub.InvokeChaincode("guarantees_cc", [][]byte{[]byte(function), requestWithoutChannelsAsBytes}, channelName)
+			if sdkResponse.Status >= com.ERRORTHRESHOLD {
+				com.DebugLogMsg("Error on invoke channel! " + channelName)
+				com.ErrorLogMsg(nil, sdkResponse.Status, "Error on invoke channel "+channelName)
+				return sdkResponse
 			}
-			channelEntities, response := data.XmlBytesToEntitiesArr(entity, response.Payload)
+			com.DebugLogMsg("Invoke sdkResponse payload is: " + string(sdkResponse.Payload))
+
+			ccResponse := com.Response{}
+			err := xml.Unmarshal(sdkResponse.Payload, &ccResponse)
+			if err != nil {
+				return com.UnmarshalError(err, string(sdkResponse.Payload))
+			}
+			com.DebugLogMsg("Invoke ccResponse payload is: " + string(ccResponse.Payload))
+
+			channelEntities, response := data.XmlBytesToEntitiesArr(entity, ccResponse.Payload)
+
 			if response.Status >= com.ERRORTHRESHOLD {
 				return response
 			}
 			entities = append(entities, channelEntities...)
+
 		}
 
 		return com.SuccessPayloadResponse(data.EntitiesToOut(entity, entities))
