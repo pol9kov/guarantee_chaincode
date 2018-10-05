@@ -169,43 +169,43 @@ func GetEntityByName(name string) (Entity, peer.Response) {
 	var entity Entity
 
 	switch name {
-	case guarantor.ENTITY_NAME:
+	case guarantor.ENTITY_NAME, guarantor.XML_TAG:
 		entity = (Entity)(&guarantor.Guarantor{})
 		break
-	case organization.ENTITY_NAME:
+	case organization.ENTITY_NAME, organization.XML_TAG:
 		entity = (Entity)(&organization.Organization{})
 		break
-	case gtype.ENTITY_NAME:
+	case gtype.ENTITY_NAME, gtype.XML_TAG:
 		entity = (Entity)(&gtype.GType{})
 		break
-	case rtype.ENTITY_NAME:
+	case rtype.ENTITY_NAME, rtype.XML_TAG:
 		entity = (Entity)(&rtype.RType{})
 		break
-	case rejtype.ENTITY_NAME:
+	case rejtype.ENTITY_NAME, rejtype.XML_TAG:
 		entity = (Entity)(&rejtype.RejType{})
 		break
-	case bankpars.ENTITY_NAME:
+	case bankpars.ENTITY_NAME, bankpars.XML_TAG:
 		entity = (Entity)(&bankpars.BankPars{})
 		break
-	case part.ENTITY_NAME:
+	case part.ENTITY_NAME, part.XML_TAG:
 		entity = (Entity)(&part.Part{})
 		break
-	case document.ENTITY_NAME:
+	case document.ENTITY_NAME, document.XML_TAG:
 		entity = (Entity)(&document.Document{})
 		break
-	case reject.ENTITY_NAME:
+	case reject.ENTITY_NAME, reject.XML_TAG:
 		entity = (Entity)(&reject.Reject{})
 		break
-	case statement.ENTITY_NAME:
+	case statement.ENTITY_NAME, statement.XML_TAG:
 		entity = (Entity)(&statement.Statement{})
 		break
-	case guarantee.ENTITY_NAME:
+	case guarantee.ENTITY_NAME, guarantee.XML_TAG:
 		entity = (Entity)(&guarantee.Guarantee{})
 		break
-	case requirement.ENTITY_NAME:
+	case requirement.ENTITY_NAME, requirement.XML_TAG:
 		entity = (Entity)(&requirement.Requirement{})
 		break
-	case rrequirement.ENTITY_NAME:
+	case rrequirement.ENTITY_NAME, rrequirement.XML_TAG:
 		entity = (Entity)(&rrequirement.RRequirement{})
 		break
 	default:

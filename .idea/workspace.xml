@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3c11c1-a5fa-4937-a442-b20b1f38f36f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/entity.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/entity.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="31582" />
+    <option name="totalTimeSeconds" value="31958" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1951042272">
@@ -55,17 +56,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="9801" />
+          <entry key="go" value="9811" />
           <entry key="json" value="1" />
-          <entry key="txt" value="988" />
+          <entry key="txt" value="1024" />
           <entry key="xml" value="104" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="9801" />
+          <entry key="Go" value="9811" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="988" />
+          <entry key="PLAIN_TEXT" value="1024" />
           <entry key="XML" value="104" />
         </counts>
       </usages-collector>
@@ -100,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/guarantees/data/entity.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="217" column="19" selection-start-line="217" selection-start-column="19" selection-end-line="217" selection-end-column="19" />
+            <state relative-caret-position="342">
+              <caret line="207" column="47" selection-start-line="207" selection-start-column="47" selection-end-line="207" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -118,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guarantees/sc/smartcontract.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="119" column="18" lean-forward="true" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
+            <state relative-caret-position="240">
+              <caret line="107" column="59" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -278,8 +279,8 @@
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go" />
         <option value="$PROJECT_DIR$/src/guarantees_test/testdata/entities/requirement.xml" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/statement/statement.go" />
-        <option value="$PROJECT_DIR$/src/guarantees/data/entity.go" />
         <option value="$PROJECT_DIR$/src/guarantees/sc/smartcontract.go" />
+        <option value="$PROJECT_DIR$/src/guarantees/data/entity.go" />
       </list>
     </option>
   </component>
@@ -298,8 +299,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
     <option name="y" value="-4" />
-    <option name="width" value="1301" />
-    <option name="height" value="772" />
+    <option name="width" value="1855" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -391,7 +392,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/src/guarantees_test/gtype_test.go&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees_test/testdata/entities/requirement.xml&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees/sc/guarantee.go&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees/sc/smartcontract.go" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538737382187" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538737584994" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -524,7 +525,7 @@
       <workItem from="1537949108063" duration="4133000" />
       <workItem from="1538040366382" duration="5021000" />
       <workItem from="1538133804836" duration="14378000" />
-      <workItem from="1538645897061" duration="8321000" />
+      <workItem from="1538645897061" duration="8758000" />
     </task>
     <task id="LOCAL-00001" summary="Add method editGuaranteeFieldStatusAndIssueDate to CC">
       <created>1534427064181</created>
@@ -743,13 +744,17 @@
       <option name="project" value="LOCAL" />
       <updated>1538735138495</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="XmlBytesToEntiytiesArr fixes">
+      <created>1538737458305</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1538737458305</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="go_test_guarantees_test - 2018.09.21 at 21h 19m 29s.xml">
-      <configuration name="go test guarantees_test" configurationId="GoTestRunConfiguration" />
-    </history-entry>
     <history-entry file="go_test_guarantees_test - 2018.09.21 at 21h 20m 32s.xml">
       <configuration name="go test guarantees_test" configurationId="GoTestRunConfiguration" />
     </history-entry>
@@ -777,9 +782,12 @@
     <history-entry file="go_test_guarantees_test - 2018.10.04 at 17h 17m 21s.xml">
       <configuration name="go test guarantees_test" configurationId="GoTestRunConfiguration" />
     </history-entry>
+    <history-entry file="go_test_guarantees_test - 2018.10.05 at 14h 03m 45s.xml">
+      <configuration name="go test guarantees_test" configurationId="GoTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192622000" />
+    <option name="totallyTimeSpent" value="193059000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -805,11 +813,11 @@
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32867885" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.41527197" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.41527197" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.2792887" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.2792887" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32845187" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -872,7 +880,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Edit logging, edit methods with 2 fields" />
     <MESSAGE value="Edit index method to abstract." />
     <MESSAGE value="Change edit and query to FieldPath and FieldValue" />
     <MESSAGE value="Construct Key from txId. &#10;Fix tests to current version." />
@@ -897,7 +904,8 @@
     <MESSAGE value="Add regexp" />
     <MESSAGE value="Get xmlBytesToEntitiesArr fix" />
     <MESSAGE value="fix channels call" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix channels call" />
+    <MESSAGE value="XmlBytesToEntiytiesArr fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="XmlBytesToEntiytiesArr fixes" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -1244,17 +1252,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/entity.go">
+    <entry file="file://$PROJECT_DIR$/src/guarantees/sc/smartcontract.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="217" column="19" selection-start-line="217" selection-start-column="19" selection-end-line="217" selection-end-column="19" />
+        <state relative-caret-position="240">
+          <caret line="107" column="59" selection-start-line="107" selection-start-column="59" selection-end-line="107" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/sc/smartcontract.go">
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/entity.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="119" column="18" lean-forward="true" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
+        <state relative-caret-position="342">
+          <caret line="207" column="47" selection-start-line="207" selection-start-column="47" selection-end-line="207" selection-end-column="47" />
         </state>
       </provider>
     </entry>
