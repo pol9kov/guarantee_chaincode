@@ -3,6 +3,7 @@ package statement
 import (
 	"encoding/xml"
 	"guarantees/com"
+	"guarantees/funcs"
 	"regexp"
 )
 
@@ -52,9 +53,9 @@ func (statement Statement) CanBeChangedOn(newStatementInterface interface{}) boo
 	valid = valid &&
 		newStatement.Id == statement.Id &&
 		newStatement.StatementSigned.Number == statement.StatementSigned.Number &&
-		newStatement.StatementSigned.Guarantor == statement.StatementSigned.Guarantor &&
-		newStatement.StatementSigned.Beneficiary == statement.StatementSigned.Beneficiary &&
-		newStatement.StatementSigned.Principal == statement.StatementSigned.Principal
+		funcs.IsFieldsEqual(&newStatement.StatementSigned.Guarantor, &statement.StatementSigned.Guarantor) &&
+		funcs.IsFieldsEqual(&newStatement.StatementSigned.Beneficiary, &statement.StatementSigned.Beneficiary) &&
+		funcs.IsFieldsEqual(&newStatement.StatementSigned.Principal, &statement.StatementSigned.Principal)
 	if valid == false {
 		com.DebugLogMsg("Fields cann't be changed")
 		return false
