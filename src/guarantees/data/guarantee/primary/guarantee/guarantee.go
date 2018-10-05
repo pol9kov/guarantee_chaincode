@@ -2,6 +2,7 @@ package guarantee
 
 import (
 	"encoding/xml"
+	"guarantees/com"
 )
 
 const (
@@ -52,14 +53,26 @@ func (guarantee Guarantee) CanBeChangedOn(newGuaranteeInterface interface{}) boo
 
 	valid = valid &&
 		CanChangeStatusOn(guarantee.Status, newGuarantee.Status)
+	if valid == false {
+		com.DebugLogMsg("Status cann't be changed from " + guarantee.Status + " to " + newGuarantee.Status)
+		return false
+	}
 
 	valid = valid &&
 		newGuarantee.Id == guarantee.Id &&
 		newGuarantee.RelationTxId == guarantee.RelationTxId
+	if valid == false {
+		com.DebugLogMsg("Fields cann't be changed")
+		return false
+	}
 
 	if guarantee.Status != "created" && guarantee.Status != "validationErr" {
 		valid = valid &&
 			newGuarantee.GuaranteeSigned.IssueDate == guarantee.GuaranteeSigned.IssueDate
+		if valid == false {
+			com.DebugLogMsg("IssueDate cann't be changed from " + guarantee.GuaranteeSigned.IssueDate + " to " + newGuarantee.GuaranteeSigned.IssueDate)
+			return false
+		}
 	}
 
 	if guarantee.Status != "created" && guarantee.Status != "validationErr" {
@@ -74,6 +87,10 @@ func (guarantee Guarantee) CanBeChangedOn(newGuaranteeInterface interface{}) boo
 
 		valid = valid &&
 			string(newGS) == string(oldGS)
+		if valid == false {
+			com.DebugLogMsg("GuaranteeSigned cann't be changed")
+			return false
+		}
 	}
 
 	if guarantee.Status == "created" && guarantee.Status == "validationErr" {
@@ -82,11 +99,13 @@ func (guarantee Guarantee) CanBeChangedOn(newGuaranteeInterface interface{}) boo
 				valid = valid &&
 					par.Value == newGuarantee.GuaranteeSigned.StatementFields.GType.Pars[i].Value &&
 					par.Name == newGuarantee.GuaranteeSigned.StatementFields.GType.Pars[i].Name
+				if valid == false {
+					com.DebugLogMsg("Par " + par.Name + " cann't be changed")
+					return false
+				}
 			}
 		}
 	}
-
-	//todo status changes
 
 	return valid
 }
