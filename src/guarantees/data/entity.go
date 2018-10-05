@@ -20,6 +20,7 @@ import (
 	"guarantees/data/guarantee/primary/statement"
 	"guarantees/funcs"
 	"reflect"
+	"strconv"
 )
 
 type Entity interface {
@@ -215,21 +216,24 @@ func GetEntityByName(name string) (Entity, peer.Response) {
 
 }
 
+type Entities struct {
+	XMLName xml.Name
+
+	Entities []Entity `xml:",any"`
+}
+
 func XmlBytesToEntitiesArr(entity Entity, xmlBytes []byte) ([]Entity, peer.Response) {
-	type Entities struct {
-		XMLName xml.Name //`xml:",any"`
 
-		Entities []Entity `xml:",any"`
-	}
+	entities := Entities{
+		XMLName: xml.Name{Local: entity.GetTagName()}}
 
-	entities := Entities{}
-	entities.XMLName = xml.Name{Local: entity.GetTagName()}
 	err := xml.Unmarshal(xmlBytes, &entities)
 	if err != nil {
 		return nil, com.UnmarshalError(err, string(xmlBytes))
 	}
 
-	return entities.Entities, com.SuccessMessageResponse("XML was unmarshaled in array of entities!")
+	com.DebugLogMsg(strconv.Itoa(len(entities.Entities)))
+	return entities.Entities, com.SuccessMessageResponse("XML" + string(xmlBytes) + " was unmarshaled in array of entities!")
 }
 
 func EntitiesToOut(entity Entity, entities []Entity) interface{} {

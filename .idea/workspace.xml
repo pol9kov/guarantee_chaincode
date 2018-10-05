@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3c11c1-a5fa-4937-a442-b20b1f38f36f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guarantees/sc/smartcontract.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/sc/smartcontract.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="31434" />
+    <option name="totalTimeSeconds" value="31582" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1951042272">
@@ -58,7 +57,7 @@
         <counts>
           <entry key="go" value="9801" />
           <entry key="json" value="1" />
-          <entry key="txt" value="971" />
+          <entry key="txt" value="988" />
           <entry key="xml" value="104" />
         </counts>
       </usages-collector>
@@ -66,7 +65,7 @@
         <counts>
           <entry key="Go" value="9801" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="971" />
+          <entry key="PLAIN_TEXT" value="988" />
           <entry key="XML" value="104" />
         </counts>
       </usages-collector>
@@ -122,8 +121,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/guarantees/sc/smartcontract.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="102" column="90" selection-start-line="102" selection-start-column="90" selection-end-line="102" selection-end-column="90" />
+            <state relative-caret-position="492">
+              <caret line="119" column="18" lean-forward="true" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -392,7 +391,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/src/guarantees_test/gtype_test.go&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees_test/testdata/entities/requirement.xml&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees/sc/guarantee.go&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees/sc/smartcontract.go" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538734027026" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538737382187" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -525,7 +524,7 @@
       <workItem from="1537949108063" duration="4133000" />
       <workItem from="1538040366382" duration="5021000" />
       <workItem from="1538133804836" duration="14378000" />
-      <workItem from="1538645897061" duration="7702000" />
+      <workItem from="1538645897061" duration="8321000" />
     </task>
     <task id="LOCAL-00001" summary="Add method editGuaranteeFieldStatusAndIssueDate to CC">
       <created>1534427064181</created>
@@ -737,7 +736,14 @@
       <option name="project" value="LOCAL" />
       <updated>1538733330140</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix channels call">
+      <created>1538735138495</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1538735138495</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -773,7 +779,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192003000" />
+    <option name="totallyTimeSpent" value="192622000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -788,7 +794,7 @@
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25981206" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25981206" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -799,11 +805,11 @@
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32867885" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.41527197" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.41527197" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.2792887" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.2792887" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32845187" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -866,7 +872,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Edit logging" />
     <MESSAGE value="Edit logging, edit methods with 2 fields" />
     <MESSAGE value="Edit index method to abstract." />
     <MESSAGE value="Change edit and query to FieldPath and FieldValue" />
@@ -891,7 +896,8 @@
     <MESSAGE value="Add id abd GuarantorId to rtype and rejtype" />
     <MESSAGE value="Add regexp" />
     <MESSAGE value="Get xmlBytesToEntitiesArr fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get xmlBytesToEntitiesArr fix" />
+    <MESSAGE value="fix channels call" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix channels call" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -1247,8 +1253,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/sc/smartcontract.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="102" column="90" selection-start-line="102" selection-start-column="90" selection-end-line="102" selection-end-column="90" />
+        <state relative-caret-position="492">
+          <caret line="119" column="18" lean-forward="true" selection-start-line="119" selection-start-column="18" selection-end-line="119" selection-end-column="18" />
         </state>
       </provider>
     </entry>
