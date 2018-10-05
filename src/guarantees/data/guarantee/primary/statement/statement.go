@@ -2,6 +2,7 @@ package statement
 
 import (
 	"encoding/xml"
+	"guarantees/com"
 	"regexp"
 )
 
@@ -43,6 +44,10 @@ func (statement Statement) CanBeChangedOn(newStatementInterface interface{}) boo
 
 	valid = valid &&
 		CanChangeStatusOn(statement.Status, newStatement.Status)
+	if valid == false {
+		com.DebugLogMsg("Status cann't be changed from " + statement.Status + " to " + newStatement.Status)
+		return false
+	}
 
 	valid = valid &&
 		newStatement.Id == statement.Id &&
@@ -50,6 +55,10 @@ func (statement Statement) CanBeChangedOn(newStatementInterface interface{}) boo
 		newStatement.StatementSigned.Guarantor == statement.StatementSigned.Guarantor &&
 		newStatement.StatementSigned.Beneficiary == statement.StatementSigned.Beneficiary &&
 		newStatement.StatementSigned.Principal == statement.StatementSigned.Principal
+	if valid == false {
+		com.DebugLogMsg("Fields cann't be changed")
+		return false
+	}
 
 	if statement.Status != "created" && statement.Status != "validationErr" {
 		newSS, err := xml.Marshal(newStatement.StatementSigned)
@@ -63,6 +72,11 @@ func (statement Statement) CanBeChangedOn(newStatementInterface interface{}) boo
 
 		valid = valid &&
 			string(newSS) == string(oldSS)
+
+		if valid == false {
+			com.DebugLogMsg("StatementSigned cann't be changed")
+			return false
+		}
 	}
 
 	for _, par := range statement.StatementSigned.GType.Pars {
@@ -71,6 +85,10 @@ func (statement Statement) CanBeChangedOn(newStatementInterface interface{}) boo
 			return false
 		}
 		valid = valid && match
+		if valid == false {
+			com.DebugLogMsg("RegularExpression is not valid")
+			return false
+		}
 	}
 
 	return valid
