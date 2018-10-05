@@ -223,6 +223,8 @@ type Entities struct {
 }
 
 func XmlBytesToEntitiesArr(entity Entity, xmlBytes []byte) ([]Entity, peer.Response) {
+	element := com.FPath.Path.PushBack("XmlBytesToEntitiesArr")
+	defer com.FPath.Path.Remove(element)
 
 	entities := Entities{
 		XMLName: xml.Name{Local: entity.GetTagName()}}
