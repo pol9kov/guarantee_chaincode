@@ -100,7 +100,7 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 		}
 		var entities []data.Entity
 		for _, channelName := range request.Channels {
-			response := APIstub.InvokeChaincode("guarantees_cc", [][]byte{requestWithoutChannelsAsBytes}, channelName)
+			response := APIstub.InvokeChaincode("guarantees_cc", [][]byte{[]byte(function), requestWithoutChannelsAsBytes}, channelName)
 			if response.Status >= com.ERRORTHRESHOLD {
 				com.ErrorLogMsg(nil, response.Status, "Error on invoke channel "+channelName)
 				return response
