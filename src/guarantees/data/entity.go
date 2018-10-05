@@ -215,7 +215,7 @@ func GetEntityByName(name string) (Entity, peer.Response) {
 
 }
 
-func XmlBytesToEntitiesArr(xmlBytes []byte) ([]Entity, peer.Response) {
+func XmlBytesToEntitiesArr(entity Entity, xmlBytes []byte) ([]Entity, peer.Response) {
 	type Entities struct {
 		XMLName xml.Name //`xml:",any"`
 
@@ -223,6 +223,7 @@ func XmlBytesToEntitiesArr(xmlBytes []byte) ([]Entity, peer.Response) {
 	}
 
 	entities := Entities{}
+	entities.XMLName = xml.Name{Local: entity.GetTagName()}
 	err := xml.Unmarshal(xmlBytes, &entities)
 	if err != nil {
 		return nil, com.UnmarshalError(err, string(xmlBytes))

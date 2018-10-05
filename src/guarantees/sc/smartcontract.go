@@ -105,7 +105,7 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 				com.ErrorLogMsg(nil, response.Status, "Error on invoke channel "+channelName)
 				return response
 			}
-			channelEntities, response := data.XmlBytesToEntitiesArr(response.Payload)
+			channelEntities, response := data.XmlBytesToEntitiesArr(entity, response.Payload)
 			if response.Status >= com.ERRORTHRESHOLD {
 				return response
 			}
