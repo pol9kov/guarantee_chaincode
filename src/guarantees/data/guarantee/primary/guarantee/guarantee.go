@@ -35,7 +35,7 @@ func CanChangeStatusOn(oldStatus, newStatus string) bool {
 	statusMap["readyToSign"] = []string{"issued"}
 	statusMap["issued"] = []string{"requirementReceived"}
 	statusMap["requirementReceived"] = []string{"issued", "closed", "wavedOfRights"}
-	statusMap["closed"] = []string{"validationErr", "created"}
+	statusMap["closed"] = []string{}
 	statusMap["wavedOfRights"] = []string{}
 
 	for _, status := range statusMap[oldStatus] {
@@ -66,16 +66,7 @@ func (guarantee Guarantee) CanBeChangedOn(newGuaranteeInterface interface{}) boo
 		return false
 	}
 
-	if guarantee.Status != "created" && guarantee.Status != "validationErr" {
-		valid = valid &&
-			newGuarantee.GuaranteeSigned.IssueDate == guarantee.GuaranteeSigned.IssueDate
-		if valid == false {
-			com.DebugLogMsg("IssueDate cann't be changed from " + guarantee.GuaranteeSigned.IssueDate + " to " + newGuarantee.GuaranteeSigned.IssueDate)
-			return false
-		}
-	}
-
-	if guarantee.Status != "created" && guarantee.Status != "validationErr" {
+	if guarantee.Status != "created" && guarantee.Status != "validationErr" && guarantee.Status != "readyToSign" {
 		newGS, err := xml.Marshal(newGuarantee.GuaranteeSigned)
 		if err != nil {
 			return false
@@ -93,9 +84,9 @@ func (guarantee Guarantee) CanBeChangedOn(newGuaranteeInterface interface{}) boo
 		}
 	}
 
-	if guarantee.Status == "created" && guarantee.Status == "validationErr" {
+	if guarantee.Status == "readyToSign" {
 		for i, par := range guarantee.GuaranteeSigned.StatementFields.GType.Pars {
-			if par.Name != "expirationDate" {
+			if par.Name != "expirationDate" || par.Name != "planIssueDate" {
 				valid = valid &&
 					par.Value == newGuarantee.GuaranteeSigned.StatementFields.GType.Pars[i].Value &&
 					par.Name == newGuarantee.GuaranteeSigned.StatementFields.GType.Pars[i].Name
