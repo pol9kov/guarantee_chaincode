@@ -32,7 +32,7 @@ func CanChangeStatusOn(oldStatus, newStatus string) bool {
 	var statusMap = make(map[string][]string)
 	statusMap["validationErr"] = []string{"validationErr", "created", "readyToSign"}
 	statusMap["created"] = []string{"validationErr", "created", "readyToSign", "issued"}
-	statusMap["readyToSign"] = []string{}
+	statusMap["readyToSign"] = []string{"issued"}
 	statusMap["issued"] = []string{"requirementReceived"}
 	statusMap["requirementReceived"] = []string{"issued", "closed", "wavedOfRights"}
 	statusMap["closed"] = []string{"validationErr", "created"}
