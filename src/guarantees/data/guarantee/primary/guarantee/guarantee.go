@@ -86,7 +86,7 @@ func (guarantee Guarantee) CanBeChangedOn(newGuaranteeInterface interface{}) boo
 
 	if guarantee.Status == "readyToSign" {
 		for i, par := range guarantee.GuaranteeSigned.StatementFields.GType.Pars {
-			if par.Name != "expirationDate" || par.Name != "planIssueDate" {
+			if par.Name != "expirationDate" && par.Name != "planIssueDate" {
 				valid = valid &&
 					par.Value == newGuarantee.GuaranteeSigned.StatementFields.GType.Pars[i].Value &&
 					par.Name == newGuarantee.GuaranteeSigned.StatementFields.GType.Pars[i].Name
