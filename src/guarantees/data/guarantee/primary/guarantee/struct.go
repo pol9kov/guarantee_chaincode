@@ -15,6 +15,7 @@ type Guarantee struct {
 
 	MSPId string `xml:"msp_id"`
 
+	StatementId        string `xml:"statement_id"`
 	Status             string `xml:"status"`
 	PrincipalSignature string `xml:"principal_signature"`
 	BankSignature      string `xml:"bank_signature"`
@@ -37,6 +38,7 @@ type GuaranteeOut struct {
 
 	Id string `xml:"id"`
 
+	StatementId        string `xml:"statement_id"`
 	Status             string `xml:"status"`
 	PrincipalSignature string `xml:"principal_signature"`
 	BankSignature      string `xml:"bank_signature"`
@@ -58,6 +60,7 @@ func (guarantee Guarantee) ToOut() interface{} {
 	result := GuaranteeOut{}
 
 	result.Id = guarantee.Id
+	result.StatementId = guarantee.StatementId
 	result.Status = guarantee.Status
 	result.PrincipalSignature = guarantee.PrincipalSignature
 	result.BankSignature = guarantee.BankSignature
