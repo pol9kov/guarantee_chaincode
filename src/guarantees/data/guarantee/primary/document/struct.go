@@ -18,7 +18,7 @@ type Document struct {
 	FieldName     string `xml:"field_name"`
 	FieldDocIndex string `xml:"field_doc_index"`
 	CreationDate  string `xml:"creation_date"`
-	CreationUser  string `xml:"creation_uate"`
+	CreationUser  string `xml:"creation_user"`
 	MIMEType      string `xml:"mime_type"`
 	Hash          string `xml:"hash"`
 	Size          string `xml:"size"`
@@ -36,7 +36,7 @@ type DocumentOut struct {
 	FieldName     string `xml:"field_name"`
 	FieldDocIndex string `xml:"field_doc_index"`
 	CreationDate  string `xml:"creation_date"`
-	CreationUser  string `xml:"creation_uate"`
+	CreationUser  string `xml:"creation_user"`
 	MIMEType      string `xml:"mime_type"`
 	Hash          string `xml:"hash"`
 	Size          string `xml:"size"`
