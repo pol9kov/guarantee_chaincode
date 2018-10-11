@@ -1,5 +1,7 @@
 package reject
 
+import "guarantees/com"
+
 const (
 	// Name of entity (for logs)
 	ENTITY_NAME = "Reject"
@@ -33,6 +35,52 @@ func (reject Reject) CanBeChangedOn(newRejectInterface interface{}) bool {
 
 	valid = valid &&
 		CanChangeStatusOn(reject.Status, newReject.Status)
+	if valid == false {
+		com.DebugLogMsg("Status cann't be changed from " + reject.Status + " to " + newReject.Status)
+		return false
+	}
+
+	valid = valid &&
+		newReject.Id == reject.Id &&
+		newReject.RelationTxId == reject.RelationTxId &&
+		newReject.EntityId == reject.EntityId &&
+		newReject.EntityType == reject.EntityType &&
+		newReject.CreateDate == reject.CreateDate &&
+		newReject.CreateUser == reject.CreateUser &&
+		newReject.Number == reject.Number &&
+		newReject.Rejtype.Id == reject.Rejtype.Id
+	if valid == false {
+		com.DebugLogMsg("Fields cann't be changed")
+		return false
+	}
+
+	for i, par := range reject.Rejtype.Pars {
+		if par.Name == "conclusion" ||
+			par.Name == "attachment" ||
+			par.Name == "delegateFio" ||
+			par.Name == "delegatePosition" ||
+			par.Name == "docDelegate" ||
+			par.Name == "docDelegateNumber" ||
+			par.Name == "docDelegateDate" {
+			if reject.Status != "created" && reject.Status != "validationErr" {
+				valid = valid &&
+					par.Value == newReject.Rejtype.Pars[i].Value &&
+					par.Name == newReject.Rejtype.Pars[i].Name
+				if valid == false {
+					com.DebugLogMsg("Par " + par.Name + " cann't be changed in this status!")
+					return false
+				}
+			}
+		} else {
+			valid = valid &&
+				par.Value == newReject.Rejtype.Pars[i].Value &&
+				par.Name == newReject.Rejtype.Pars[i].Name
+			if valid == false {
+				com.DebugLogMsg("Par " + par.Name + " cann't be never changed!")
+				return false
+			}
+		}
+	}
 
 	return valid
 }

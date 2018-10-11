@@ -2,6 +2,7 @@ package reject
 
 import (
 	"encoding/xml"
+	"guarantees/data/guarantee/additional/rejtype"
 )
 
 type Reject struct {
@@ -13,14 +14,14 @@ type Reject struct {
 
 	MSPId string `xml:"msp_id"`
 
-	Status             string `xml:"status"`
-	EntityId           string `xml:"entity_id"`
-	EntityType         string `xml:"entity_type"`
-	GuarantorSignature string `xml:"guarantor_signature"`
-	CreateDate         string `xml:"create_date"`
-	CreateUser         string `xml:"create_user"`
-	Number             string `xml:"number"`
-	Rejtype            string `xml:"rejtype"`
+	Status             string          `xml:"status"`
+	EntityId           string          `xml:"entity_id"`
+	EntityType         string          `xml:"entity_type"`
+	GuarantorSignature string          `xml:"guarantor_signature"`
+	CreateDate         string          `xml:"create_date"`
+	CreateUser         string          `xml:"create_user"`
+	Number             string          `xml:"number"`
+	Rejtype            rejtype.RejType `xml:"rejtype"`
 }
 
 type RejectOut struct {
@@ -28,14 +29,14 @@ type RejectOut struct {
 
 	Id string `xml:"id"`
 
-	Status             string `xml:"status"`
-	EntityId           string `xml:"entity_id"`
-	EntityType         string `xml:"entity_type"`
-	GuarantorSignature string `xml:"guarantor_signature"`
-	CreateDate         string `xml:"create_date"`
-	CreateUser         string `xml:"create_user"`
-	Number             string `xml:"number"`
-	Rejtype            string `xml:"rejtype"`
+	Status             string      `xml:"status"`
+	EntityId           string      `xml:"entity_id"`
+	EntityType         string      `xml:"entity_type"`
+	GuarantorSignature string      `xml:"guarantor_signature"`
+	CreateDate         string      `xml:"create_date"`
+	CreateUser         string      `xml:"create_user"`
+	Number             string      `xml:"number"`
+	Rejtype            interface{} `xml:"rejtype"`
 }
 
 func (reject Reject) ToOut() interface{} {
@@ -49,6 +50,7 @@ func (reject Reject) ToOut() interface{} {
 	result.CreateDate = reject.CreateDate
 	result.CreateUser = reject.CreateUser
 	result.Number = reject.Number
+	result.Rejtype = reject.Rejtype.ToOut()
 
 	return result
 }
