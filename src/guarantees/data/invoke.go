@@ -24,7 +24,8 @@ func Put(entity Entity, APIstub shim.ChaincodeStubInterface) peer.Response {
 		return response
 	}
 
-	return com.SuccessMessageResponse(entity.GetEntityName() + " was created.")
+	com.InfoLogMsg(entity.GetEntityName() + " was created.")
+	return com.SuccessPayloadResponse(entity.ToOut())
 }
 
 func putValue(entity Entity, APIstub shim.ChaincodeStubInterface) peer.Response {
