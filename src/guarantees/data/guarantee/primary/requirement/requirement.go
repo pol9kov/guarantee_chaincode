@@ -38,9 +38,9 @@ func CanChangeInternalStatusOn(oldInternalStatus, newInternalStatus string) bool
 	internalStatusMap["created"] = []string{"validationErr", "created", "cancelled", "sent"}
 	internalStatusMap["cancelled"] = []string{}
 	internalStatusMap["sent"] = []string{"inProgress", "revoked"}
-	internalStatusMap["inProgress"] = []string{"paid", "reject_created", "paused", "revoked"}
+	internalStatusMap["inProgress"] = []string{"paid", "rejectCreated", "paused", "revoked"}
 	internalStatusMap["paid"] = []string{}
-	internalStatusMap["reject_created"] = []string{"rejectToSign", "revoked"}
+	internalStatusMap["rejectCreated"] = []string{"rejectToSign", "revoked"}
 	internalStatusMap["rejectToSign"] = []string{"rejected", "revoked"}
 	internalStatusMap["rejected"] = []string{}
 	internalStatusMap["paused"] = []string{"paid", "rejected"}
