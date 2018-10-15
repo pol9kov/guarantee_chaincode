@@ -11,6 +11,10 @@ const (
 	KEY = "ORGANIZATION"
 )
 
+func (organization Organization) CanCreate() bool {
+	return true
+}
+
 func (organization Organization) CanBeChangedOn(newOrganizationInterface interface{}) bool {
 	_ = newOrganizationInterface.(*Organization)
 	return false

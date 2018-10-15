@@ -11,6 +11,10 @@ const (
 	KEY = "PART"
 )
 
+func (part Part) CanCreate() bool {
+	return true
+}
+
 func (part Part) CanBeChangedOn(newPartInterface interface{}) bool {
 	//newPart := newPartInterface.(*Part)
 	//valid := true

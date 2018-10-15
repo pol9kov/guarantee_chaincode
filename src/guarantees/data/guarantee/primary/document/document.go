@@ -11,6 +11,10 @@ const (
 	KEY = "DOCUMENT"
 )
 
+func (document Document) CanCreate() bool {
+	return true
+}
+
 func (document Document) CanBeChangedOn(newDocumentInterface interface{}) bool {
 	//newDocument := newDocumentInterface.(*Document)
 	//valid := true

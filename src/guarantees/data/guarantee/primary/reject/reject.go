@@ -1,6 +1,9 @@
 package reject
 
-import "guarantees/com"
+import (
+	"guarantees/com"
+	"regexp"
+)
 
 const (
 	// Name of entity (for logs)
@@ -27,6 +30,30 @@ func CanChangeStatusOn(oldStatus, newStatus string) bool {
 	}
 
 	return false
+}
+
+func (reject Reject) regExpCheck() bool {
+	valid := true
+
+	for _, par := range reject.Rejtype.Pars {
+		if par.Value != "" {
+			match, err := regexp.MatchString(par.RegularExpression, par.Value)
+			if err != nil {
+				return false
+			}
+			valid = valid && match
+			if valid == false {
+				com.DebugLogMsg("RegularExpression is not valid")
+				return false
+			}
+		}
+	}
+
+	return valid
+}
+
+func (reject Reject) CanCreate() bool {
+	return reject.regExpCheck()
 }
 
 func (reject Reject) CanBeChangedOn(newRejectInterface interface{}) bool {
@@ -81,6 +108,9 @@ func (reject Reject) CanBeChangedOn(newRejectInterface interface{}) bool {
 			}
 		}
 	}
+
+	valid = valid &&
+		newReject.regExpCheck()
 
 	return valid
 }

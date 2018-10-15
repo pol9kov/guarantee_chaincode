@@ -39,6 +39,30 @@ func CanChangeStatusOn(oldStatus, newStatus string) bool {
 	return false
 }
 
+func (statement Statement) regExpCheck() bool {
+	valid := true
+
+	for _, par := range statement.StatementSigned.GType.Pars {
+		if par.Value != "" {
+			match, err := regexp.MatchString(par.RegularExpression, par.Value)
+			if err != nil {
+				return false
+			}
+			valid = valid && match
+			if valid == false {
+				com.DebugLogMsg("RegularExpression is not valid")
+				return false
+			}
+		}
+	}
+
+	return valid
+}
+
+func (statement Statement) CanCreate() bool {
+	return statement.regExpCheck()
+}
+
 func (statement Statement) CanBeChangedOn(newStatementInterface interface{}) bool {
 	newStatement := newStatementInterface.(*Statement)
 	valid := true
@@ -80,17 +104,7 @@ func (statement Statement) CanBeChangedOn(newStatementInterface interface{}) boo
 		}
 	}
 
-	for _, par := range statement.StatementSigned.GType.Pars {
-		match, err := regexp.MatchString(par.RegularExpression, par.Value)
-		if err != nil {
-			return false
-		}
-		valid = valid && match
-		if valid == false {
-			com.DebugLogMsg("RegularExpression is not valid")
-			return false
-		}
-	}
+	newStatement.regExpCheck()
 
 	return valid
 }

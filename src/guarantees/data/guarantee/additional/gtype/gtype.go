@@ -11,6 +11,10 @@ const (
 	KEY = "GTYPE" // default
 )
 
+func (gtype GType) CanCreate() bool {
+	return true
+}
+
 func (gtype GType) CanBeChangedOn(newGTypeInterface interface{}) bool {
 	_ = newGTypeInterface.(*GType)
 	return false

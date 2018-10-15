@@ -1,5 +1,10 @@
 package requirement
 
+import (
+	"guarantees/com"
+	"regexp"
+)
+
 const (
 	// Name of entity (for logs)
 	ENTITY_NAME = "Requirement"
@@ -55,6 +60,30 @@ func CanChangeInternalStatusOn(oldInternalStatus, newInternalStatus string) bool
 	return false
 }
 
+func (requirement Requirement) regExpCheck() bool {
+	valid := true
+
+	for _, par := range requirement.RequirementSigned.RequirementTemplate.Pars {
+		if par.Value != "" {
+			match, err := regexp.MatchString(par.RegularExpression, par.Value)
+			if err != nil {
+				return false
+			}
+			valid = valid && match
+			if valid == false {
+				com.DebugLogMsg("RegularExpression is not valid")
+				return false
+			}
+		}
+	}
+
+	return valid
+}
+
+func (requirement Requirement) CanCreate() bool {
+	return requirement.regExpCheck()
+}
+
 func (requirement Requirement) CanBeChangedOn(newRequirementInterface interface{}) bool {
 	newRequirement := newRequirementInterface.(*Requirement)
 	valid := true
@@ -63,6 +92,9 @@ func (requirement Requirement) CanBeChangedOn(newRequirementInterface interface{
 		CanChangeStatusOn(requirement.Status, newRequirement.Status)
 	valid = valid &&
 		CanChangeInternalStatusOn(requirement.InternalStatus, newRequirement.InternalStatus)
+
+	valid = valid &&
+		newRequirement.regExpCheck()
 
 	return valid
 }

@@ -1,5 +1,10 @@
 package rrequirement
 
+import (
+	"guarantees/com"
+	"regexp"
+)
+
 const (
 	// Name of entity (for logs)
 	ENTITY_NAME = "RRequirement"
@@ -11,9 +16,38 @@ const (
 	KEY = "RREQUIREMENT"
 )
 
+func (rrequirement RRequirement) regExpCheck() bool {
+	valid := true
+
+	for _, par := range rrequirement.RequirementSigned.RequirementTemplate.Pars {
+		if par.Value != "" {
+			match, err := regexp.MatchString(par.RegularExpression, par.Value)
+			if err != nil {
+				return false
+			}
+			valid = valid && match
+			if valid == false {
+				com.DebugLogMsg("RegularExpression is not valid")
+				return false
+			}
+		}
+	}
+
+	return valid
+}
+
+func (rrequirement RRequirement) CanCreate() bool {
+	return rrequirement.regExpCheck()
+}
+
 func (rrequirement RRequirement) CanBeChangedOn(newRRequirementInterface interface{}) bool {
-	_ = newRRequirementInterface.(*RRequirement)
-	return true
+	newRRequirement := newRRequirementInterface.(*RRequirement)
+	valid := true
+
+	valid = valid &&
+		newRRequirement.regExpCheck()
+
+	return valid
 
 	//todo status changes
 }

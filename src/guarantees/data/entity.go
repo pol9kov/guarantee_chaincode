@@ -40,6 +40,7 @@ type Entity interface {
 	GetKey() string
 	SetMSPId(string)
 	GetMSPId() string
+	CanCreate() bool
 	CanBeChangedOn(interface{}) bool
 
 	// Transform entity to entityOut

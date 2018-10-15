@@ -13,6 +13,10 @@ const (
 	KEY = "REVOKE"
 )
 
+func (revoke Revoke) CanCreate() bool {
+	return true
+}
+
 func (revoke Revoke) CanBeChangedOn(newRevokeInterface interface{}) bool {
 	newRevoke := newRevokeInterface.(*Revoke)
 	valid := true

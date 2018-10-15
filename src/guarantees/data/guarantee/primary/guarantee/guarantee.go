@@ -3,6 +3,7 @@ package guarantee
 import (
 	"encoding/xml"
 	"guarantees/com"
+	"regexp"
 )
 
 const (
@@ -45,6 +46,30 @@ func CanChangeStatusOn(oldStatus, newStatus string) bool {
 	}
 
 	return false
+}
+
+func (guarantee Guarantee) regExpCheck() bool {
+	valid := true
+
+	for _, par := range guarantee.GuaranteeSigned.StatementFields.GType.Pars {
+		if par.Value != "" {
+			match, err := regexp.MatchString(par.RegularExpression, par.Value)
+			if err != nil {
+				return false
+			}
+			valid = valid && match
+			if valid == false {
+				com.DebugLogMsg("RegularExpression is not valid")
+				return false
+			}
+		}
+	}
+
+	return valid
+}
+
+func (guarantee Guarantee) CanCreate() bool {
+	return guarantee.regExpCheck()
 }
 
 func (guarantee Guarantee) CanBeChangedOn(newGuaranteeInterface interface{}) bool {
@@ -97,6 +122,9 @@ func (guarantee Guarantee) CanBeChangedOn(newGuaranteeInterface interface{}) boo
 			}
 		}
 	}
+
+	valid = valid &&
+		newGuarantee.regExpCheck()
 
 	return valid
 }

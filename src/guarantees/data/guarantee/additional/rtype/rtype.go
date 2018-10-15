@@ -11,6 +11,10 @@ const (
 	KEY = "RTYPE" // default
 )
 
+func (rtype RType) CanCreate() bool {
+	return true
+}
+
 func (rtype RType) CanBeChangedOn(newRTypeInterface interface{}) bool {
 	_ = newRTypeInterface.(*RType)
 	return false

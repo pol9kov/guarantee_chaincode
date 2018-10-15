@@ -11,6 +11,10 @@ const (
 	KEY = "GUARANTOR"
 )
 
+func (guarantor Guarantor) CanCreate() bool {
+	return true
+}
+
 func (guarantor Guarantor) CanBeChangedOn(newGuarantorInterface interface{}) bool {
 	_ = newGuarantorInterface.(*Guarantor)
 	return false
