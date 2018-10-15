@@ -59,7 +59,7 @@ func (guarantee Guarantee) regExpCheck() bool {
 			}
 			valid = valid && match
 			if valid == false {
-				com.DebugLogMsg("RegularExpression is not valid")
+				com.DebugLogMsg("RegularExpression is not valid for par: " + par.Name)
 				return false
 			}
 		}
