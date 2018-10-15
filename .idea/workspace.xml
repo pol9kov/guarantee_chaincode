@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f3c11c1-a5fa-4937-a442-b20b1f38f36f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke/revoke.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke/struct.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guarantees/data/invoke.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/invoke.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,15 +13,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="41954" />
+    <option name="totalTimeSeconds" value="44041" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1951042272">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="12" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.24" value="1" />
@@ -31,14 +32,14 @@
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.73" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="LICENSE" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="go" value="635" />
+          <entry key="go" value="642" />
           <entry key="java" value="1" />
           <entry key="json" value="1" />
           <entry key="sh" value="1" />
@@ -49,7 +50,7 @@
         <counts>
           <entry key="Bash" value="1" />
           <entry key="Git file" value="1" />
-          <entry key="Go" value="635" />
+          <entry key="Go" value="642" />
           <entry key="JAVA" value="1" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -58,17 +59,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="10694" />
+          <entry key="go" value="10745" />
           <entry key="json" value="1" />
-          <entry key="txt" value="1154" />
+          <entry key="txt" value="1183" />
           <entry key="xml" value="106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="10694" />
+          <entry key="Go" value="10745" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="1154" />
+          <entry key="PLAIN_TEXT" value="1183" />
           <entry key="XML" value="106" />
         </counts>
       </usages-collector>
@@ -94,65 +95,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/entity.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4460">
-              <caret line="280" selection-start-line="280" selection-end-line="280" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/invoke.go">
+        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke/revoke.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+            <state relative-caret-position="202">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/query.go">
+        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke/struct.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="63" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/guarantee/guarantee.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="896">
-              <caret line="88" column="76" selection-start-line="88" selection-start-column="76" selection-end-line="94" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/struct.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="720">
+              <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -186,8 +142,6 @@
       <find>Requirement</find>
       <find>sent</find>
       <find>requirement</find>
-      <find>reject</find>
-      <find>Reject</find>
       <find>part</find>
       <find>Part</find>
       <find>RType</find>
@@ -198,6 +152,8 @@
       <find>req</find>
       <find>.XMLName</find>
       <find>swit</find>
+      <find>reject</find>
+      <find>Reject</find>
     </findStrings>
     <replaceStrings>
       <replace>RType</replace>
@@ -218,6 +174,9 @@
       <replace>regtype</replace>
       <replace>rejtype</replace>
       <replace>RejType</replace>
+      <replace>re</replace>
+      <replace>revoke</replace>
+      <replace>Revoke</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/.idea</dir>
@@ -228,6 +187,7 @@
       <dir>$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype</dir>
       <dir>$PROJECT_DIR$/src/guarantees/data/guarantee/primary/rrequirement</dir>
       <dir>$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject</dir>
+      <dir>$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -251,8 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/guarantees_test/testdata/entities/guarantor2.xml" />
-        <option value="$PROJECT_DIR$/src/guarantees_test/sc_test.go" />
         <option value="$PROJECT_DIR$/src/guarantees_test/guarantor_test.go" />
         <option value="$PROJECT_DIR$/src/guarantees_test/cc_test.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/gtype.go" />
@@ -302,6 +260,8 @@
         <option value="$PROJECT_DIR$/src/guarantees_test/testdata/entities/guarantee.xml" />
         <option value="$PROJECT_DIR$/src/guarantees_test/testdata/entities/guarantee_edit.xml" />
         <option value="$PROJECT_DIR$/src/guarantees/data/invoke.go" />
+        <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke/struct.go" />
+        <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke/revoke.go" />
       </list>
     </option>
   </component>
@@ -320,8 +280,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="65" />
     <option name="y" value="-4" />
-    <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="width" value="1301" />
+    <option name="height" value="772" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -329,6 +289,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -346,6 +308,13 @@
               <item name="chaincode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guarantees" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guarantees" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
@@ -419,6 +388,16 @@
               <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="guarantee" type="462c0819:PsiDirectoryNode" />
               <item name="primary" type="462c0819:PsiDirectoryNode" />
+              <item name="revoke" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="chaincode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="chaincode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guarantees" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="guarantee" type="462c0819:PsiDirectoryNode" />
+              <item name="primary" type="462c0819:PsiDirectoryNode" />
               <item name="statement" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -464,8 +443,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -474,7 +451,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/src/guarantees_test/gtype_test.go&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees_test/testdata/entities/requirement.xml&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees/sc/guarantee.go&#10;/home/egor/Projects/src/guarantees/guarantees/chaincode/src/guarantees/sc/smartcontract.go" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539337815999" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539593888188" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
     <property name="configurable.Module.GOPATH.is.expanded" value="false" />
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
@@ -610,7 +587,8 @@
       <workItem from="1538645897061" duration="14575000" />
       <workItem from="1538846745318" duration="12222000" />
       <workItem from="1539175864877" duration="599000" />
-      <workItem from="1539242780293" duration="5141000" />
+      <workItem from="1539242780293" duration="7186000" />
+      <workItem from="1539594003810" duration="1591000" />
     </task>
     <task id="LOCAL-00001" summary="Add method editGuaranteeFieldStatusAndIssueDate to CC">
       <created>1534427064181</created>
@@ -920,7 +898,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539260614259</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Return entity after creation">
+      <created>1539342425438</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1539342425438</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -956,7 +941,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216838000" />
+    <option name="totallyTimeSpent" value="220474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -971,7 +956,7 @@
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27086788" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27418464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -982,11 +967,11 @@
       <window_info anchor="bottom" id="Messages" order="0" weight="0.3294979" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32845187" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.30648535" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.30648535" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.2876569" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.40690377" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32845187" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -1049,7 +1034,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Requirements added and tested" />
     <MESSAGE value="Fixed the bug with edit not-string field." />
     <MESSAGE value="Fixed the bug with edit ARRAY field." />
     <MESSAGE value="imports fixed" />
@@ -1074,7 +1058,8 @@
     <MESSAGE value="Add statementId field" />
     <MESSAGE value="Doc fields fix" />
     <MESSAGE value="Reject is done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reject is done" />
+    <MESSAGE value="Return entity after creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Return entity after creation" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -1091,20 +1076,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/rrequirement/struct.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="46" lean-forward="true" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees_test/testdata/entities/gtype.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="637" column="16" selection-start-line="637" selection-start-column="16" selection-end-line="637" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../github.com/hyperledger/fabric/core/chaincode/shim/chaincode.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -1312,13 +1283,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/com/error.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4302">
-          <caret line="242" selection-start-line="242" selection-end-line="242" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/guarantee/struct.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -1385,24 +1349,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/struct.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/struct.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1436,8 +1386,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/data/invoke.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        <state relative-caret-position="306">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/com/error.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="43" column="17" selection-end-line="130" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/struct.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" selection-start-line="1" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke/struct.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="42" column="45" selection-start-line="42" selection-start-column="45" selection-end-line="42" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke/revoke.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
         </state>
       </provider>
     </entry>
