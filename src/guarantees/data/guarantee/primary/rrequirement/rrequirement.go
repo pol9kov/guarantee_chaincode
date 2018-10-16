@@ -36,11 +36,11 @@ func (rrequirement RRequirement) regExpCheck() bool {
 	return valid
 }
 
-func (rrequirement RRequirement) CanCreate() bool {
+func (rrequirement RRequirement) CreateValidation() bool {
 	return rrequirement.regExpCheck()
 }
 
-func (rrequirement RRequirement) CanBeChangedOn(newRRequirementInterface interface{}) bool {
+func (rrequirement RRequirement) ChangeValidation(newRRequirementInterface interface{}) bool {
 	newRRequirement := newRRequirementInterface.(*RRequirement)
 	valid := true
 

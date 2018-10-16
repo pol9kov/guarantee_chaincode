@@ -11,11 +11,11 @@ const (
 	KEY = "GTYPE" // default
 )
 
-func (gtype GType) CanCreate() bool {
+func (gtype GType) CreateValidation() bool {
 	return true
 }
 
-func (gtype GType) CanBeChangedOn(newGTypeInterface interface{}) bool {
+func (gtype GType) ChangeValidation(newGTypeInterface interface{}) bool {
 	_ = newGTypeInterface.(*GType)
 	return false
 }

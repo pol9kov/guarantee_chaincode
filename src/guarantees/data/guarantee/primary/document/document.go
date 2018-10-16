@@ -11,11 +11,11 @@ const (
 	KEY = "DOCUMENT"
 )
 
-func (document Document) CanCreate() bool {
+func (document Document) CreateValidation() bool {
 	return true
 }
 
-func (document Document) CanBeChangedOn(newDocumentInterface interface{}) bool {
+func (document Document) ChangeValidation(newDocumentInterface interface{}) bool {
 	//newDocument := newDocumentInterface.(*Document)
 	//valid := true
 

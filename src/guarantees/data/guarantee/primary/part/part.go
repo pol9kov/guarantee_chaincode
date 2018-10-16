@@ -11,11 +11,11 @@ const (
 	KEY = "PART"
 )
 
-func (part Part) CanCreate() bool {
+func (part Part) CreateValidation() bool {
 	return true
 }
 
-func (part Part) CanBeChangedOn(newPartInterface interface{}) bool {
+func (part Part) ChangeValidation(newPartInterface interface{}) bool {
 	//newPart := newPartInterface.(*Part)
 	//valid := true
 

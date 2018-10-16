@@ -59,12 +59,34 @@ func (statement Statement) regExpCheck() bool {
 	return valid
 }
 
-func (statement Statement) CanCreate() bool {
+func (statement Statement) NeedCreateValidation() bool {
+	if statement.Status == "validationErr" {
+		return false
+	}
+	return true
+}
+
+func (statement Statement) CreateValidation() bool {
+	if !statement.NeedCreateValidation() {
+		return true
+	}
 	return statement.regExpCheck()
 }
 
-func (statement Statement) CanBeChangedOn(newStatementInterface interface{}) bool {
+func (statement Statement) NeedChangeValidation() bool {
+	if statement.Status == "validationErr" {
+		return false
+	}
+	return true
+}
+
+func (statement Statement) ChangeValidation(newStatementInterface interface{}) bool {
 	newStatement := newStatementInterface.(*Statement)
+
+	if !newStatement.NeedChangeValidation() {
+		return true
+	}
+
 	valid := true
 
 	valid = valid &&

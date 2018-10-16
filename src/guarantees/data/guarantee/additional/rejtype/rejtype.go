@@ -11,11 +11,11 @@ const (
 	KEY = "REJTYPE" // default
 )
 
-func (rejtype RejType) CanCreate() bool {
+func (rejtype RejType) CreateValidation() bool {
 	return true
 }
 
-func (rejtype RejType) CanBeChangedOn(newRejTypeInterface interface{}) bool {
+func (rejtype RejType) ChangeValidation(newRejTypeInterface interface{}) bool {
 	_ = newRejTypeInterface.(*RejType)
 	return false
 }

@@ -3,7 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="3f3c11c1-a5fa-4937-a442-b20b1f38f36f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guarantees/sc/smartcontract.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/sc/smartcontract.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/entity.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/entity.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/bankpars/bankpars.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/bankpars/bankpars.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/gtype/gtype.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/gtype/gtype.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/guarantor/guarantor.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/guarantor/guarantor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/organization/organization.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/organization/organization.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/rejtype.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rejtype/rejtype.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/rtype.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/additional/rtype/rtype.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/document/document.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/document/document.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/guarantee/guarantee.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/guarantee/guarantee.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/part.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/part/part.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/requirement.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/requirement.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke/revoke.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke/revoke.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/rrequirement/rrequirement.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/rrequirement/rrequirement.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/statement/statement.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/statement/statement.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guarantees/data/invoke.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/guarantees/data/invoke.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +27,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="47286" />
+    <option name="totalTimeSeconds" value="51486" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1951042272">
@@ -58,17 +73,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="11074" />
+          <entry key="go" value="11233" />
           <entry key="json" value="1" />
-          <entry key="txt" value="1250" />
+          <entry key="txt" value="1270" />
           <entry key="xml" value="106" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="11074" />
+          <entry key="Go" value="11233" />
           <entry key="JSON" value="1" />
-          <entry key="PLAIN_TEXT" value="1250" />
+          <entry key="PLAIN_TEXT" value="1270" />
           <entry key="XML" value="106" />
         </counts>
       </usages-collector>
@@ -127,19 +142,19 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/statement/statement.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="52" column="86" selection-start-line="52" selection-start-column="86" selection-end-line="52" selection-end-column="86" />
+            <state relative-caret-position="198">
+              <caret line="61" column="47" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guarantees/sc/smartcontract.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="980">
               <caret line="114" column="13" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
             </state>
           </provider>
@@ -177,8 +192,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gtype</find>
-      <find>Guarantee</find>
       <find>value=&quot;&quot;</find>
       <find>display_type</find>
       <find>resp</find>
@@ -207,6 +220,8 @@
       <find>swit</find>
       <find>reject</find>
       <find>Reject</find>
+      <find>CanCreate()</find>
+      <find>CanBeChangedOn(</find>
     </findStrings>
     <replaceStrings>
       <replace>RType</replace>
@@ -230,6 +245,9 @@
       <replace>re</replace>
       <replace>revoke</replace>
       <replace>Revoke</replace>
+      <replace>CreateValidation()</replace>
+      <replace>ChangeValidation()</replace>
+      <replace>ChangeValidation(</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/.idea</dir>
@@ -241,6 +259,7 @@
       <dir>$PROJECT_DIR$/src/guarantees/data/guarantee/primary/rrequirement</dir>
       <dir>$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject</dir>
       <dir>$PROJECT_DIR$/src/guarantees/data/guarantee/primary/revoke</dir>
+      <dir>$PROJECT_DIR$/src/guarantees/data</dir>
     </dirStrings>
   </component>
   <component name="GOROOT" path="/usr/local/go" />
@@ -313,8 +332,8 @@
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/requirement.go" />
         <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/rrequirement/rrequirement.go" />
-        <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/statement/statement.go" />
         <option value="$PROJECT_DIR$/src/guarantees/sc/smartcontract.go" />
+        <option value="$PROJECT_DIR$/src/guarantees/data/guarantee/primary/statement/statement.go" />
       </list>
     </option>
   </component>
@@ -557,14 +576,7 @@
       <workItem from="1538846745318" duration="12222000" />
       <workItem from="1539175864877" duration="599000" />
       <workItem from="1539242780293" duration="7186000" />
-      <workItem from="1539594003810" duration="8373000" />
-    </task>
-    <task id="LOCAL-00001" summary="Add method editGuaranteeFieldStatusAndIssueDate to CC">
-      <created>1534427064181</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1534427064181</updated>
+      <workItem from="1539594003810" duration="14381000" />
     </task>
     <task id="LOCAL-00002" summary="Commit workspace">
       <created>1534427113289</created>
@@ -902,7 +914,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539615136374</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Remove double log">
+      <created>1539683548617</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1539683548619</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -938,7 +957,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227256000" />
+    <option name="totallyTimeSpent" value="233264000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -968,7 +987,7 @@
       <window_info anchor="bottom" id="Debug" order="4" weight="0.39958158" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.40690377" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.30543932" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32845187" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -1031,7 +1050,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="Add edit by relation Id" />
     <MESSAGE value="Added regexp" />
     <MESSAGE value="add match error" />
     <MESSAGE value="Added internal status to requirements" />
@@ -1056,7 +1074,8 @@
     <MESSAGE value="Status validation fixes" />
     <MESSAGE value="RegExp in all objects!" />
     <MESSAGE value="Add logs to regexp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add logs to regexp" />
+    <MESSAGE value="Remove double log" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove double log" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -1379,16 +1398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="45" column="86" selection-start-line="45" selection-start-column="86" selection-end-line="45" selection-end-column="86" />
-          <folding>
-            <element signature="e#16#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/requirement/requirement.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -1406,6 +1415,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/reject/reject.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="45" column="86" selection-start-line="45" selection-start-column="86" selection-end-line="45" selection-end-column="86" />
+          <folding>
+            <element signature="e#16#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guarantees/sc/smartcontract.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="980">
+          <caret line="114" column="13" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/rrequirement/rrequirement.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1418,15 +1444,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guarantees/data/guarantee/primary/statement/statement.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="52" column="86" selection-start-line="52" selection-start-column="86" selection-end-line="52" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guarantees/sc/smartcontract.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="114" column="13" selection-start-line="114" selection-start-column="13" selection-end-line="114" selection-end-column="13" />
+        <state relative-caret-position="198">
+          <caret line="61" column="47" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="47" />
         </state>
       </provider>
     </entry>

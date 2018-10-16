@@ -52,11 +52,11 @@ func (reject Reject) regExpCheck() bool {
 	return valid
 }
 
-func (reject Reject) CanCreate() bool {
+func (reject Reject) CreateValidation() bool {
 	return reject.regExpCheck()
 }
 
-func (reject Reject) CanBeChangedOn(newRejectInterface interface{}) bool {
+func (reject Reject) ChangeValidation(newRejectInterface interface{}) bool {
 	newReject := newRejectInterface.(*Reject)
 	valid := true
 

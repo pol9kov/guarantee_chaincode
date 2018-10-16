@@ -40,8 +40,8 @@ type Entity interface {
 	GetKey() string
 	SetMSPId(string)
 	GetMSPId() string
-	CanCreate() bool
-	CanBeChangedOn(interface{}) bool
+	CreateValidation() bool
+	ChangeValidation(interface{}) bool
 
 	// Transform entity to entityOut
 	ToOut() interface{}

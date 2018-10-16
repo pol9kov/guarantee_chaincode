@@ -11,11 +11,11 @@ const (
 	KEY = "ORGANIZATION"
 )
 
-func (organization Organization) CanCreate() bool {
+func (organization Organization) CreateValidation() bool {
 	return true
 }
 
-func (organization Organization) CanBeChangedOn(newOrganizationInterface interface{}) bool {
+func (organization Organization) ChangeValidation(newOrganizationInterface interface{}) bool {
 	_ = newOrganizationInterface.(*Organization)
 	return false
 }

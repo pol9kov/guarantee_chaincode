@@ -80,11 +80,11 @@ func (requirement Requirement) regExpCheck() bool {
 	return valid
 }
 
-func (requirement Requirement) CanCreate() bool {
+func (requirement Requirement) CreateValidation() bool {
 	return requirement.regExpCheck()
 }
 
-func (requirement Requirement) CanBeChangedOn(newRequirementInterface interface{}) bool {
+func (requirement Requirement) ChangeValidation(newRequirementInterface interface{}) bool {
 	newRequirement := newRequirementInterface.(*Requirement)
 	valid := true
 

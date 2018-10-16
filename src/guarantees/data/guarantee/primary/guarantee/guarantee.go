@@ -68,11 +68,11 @@ func (guarantee Guarantee) regExpCheck() bool {
 	return valid
 }
 
-func (guarantee Guarantee) CanCreate() bool {
+func (guarantee Guarantee) CreateValidation() bool {
 	return guarantee.regExpCheck()
 }
 
-func (guarantee Guarantee) CanBeChangedOn(newGuaranteeInterface interface{}) bool {
+func (guarantee Guarantee) ChangeValidation(newGuaranteeInterface interface{}) bool {
 	newGuarantee := newGuaranteeInterface.(*Guarantee)
 	valid := true
 

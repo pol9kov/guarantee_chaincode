@@ -121,7 +121,7 @@ func EditAll(entity Entity, APIstub shim.ChaincodeStubInterface) peer.Response {
 		return com.UnmarshalError(err, string(bytes))
 	}
 
-	if !oldEntity.CanBeChangedOn(entity) {
+	if !oldEntity.ChangeValidation(entity) {
 		return com.EntityValidationError()
 	}
 

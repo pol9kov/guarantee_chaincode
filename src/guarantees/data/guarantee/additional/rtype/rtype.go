@@ -11,11 +11,11 @@ const (
 	KEY = "RTYPE" // default
 )
 
-func (rtype RType) CanCreate() bool {
+func (rtype RType) CreateValidation() bool {
 	return true
 }
 
-func (rtype RType) CanBeChangedOn(newRTypeInterface interface{}) bool {
+func (rtype RType) ChangeValidation(newRTypeInterface interface{}) bool {
 	_ = newRTypeInterface.(*RType)
 	return false
 }

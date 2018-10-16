@@ -11,11 +11,11 @@ const (
 	KEY = "BANKPARS" // default
 )
 
-func (bankPars BankPars) CanCreate() bool {
+func (bankPars BankPars) CreateValidation() bool {
 	return true
 }
 
-func (bankPars BankPars) CanBeChangedOn(newBankParsInterface interface{}) bool {
+func (bankPars BankPars) ChangeValidation(newBankParsInterface interface{}) bool {
 	_ = newBankParsInterface.(*BankPars)
 	return false
 }

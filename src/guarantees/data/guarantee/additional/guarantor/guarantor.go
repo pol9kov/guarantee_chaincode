@@ -11,11 +11,11 @@ const (
 	KEY = "GUARANTOR"
 )
 
-func (guarantor Guarantor) CanCreate() bool {
+func (guarantor Guarantor) CreateValidation() bool {
 	return true
 }
 
-func (guarantor Guarantor) CanBeChangedOn(newGuarantorInterface interface{}) bool {
+func (guarantor Guarantor) ChangeValidation(newGuarantorInterface interface{}) bool {
 	_ = newGuarantorInterface.(*Guarantor)
 	return false
 }
