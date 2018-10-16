@@ -113,7 +113,6 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 				com.ErrorLogMsg(nil, sdkResponse.Status, "Error on invoke channel "+channelName)
 				return sdkResponse
 			}
-			com.DebugLogMsg("Invoke sdkResponse payload is: " + string(sdkResponse.Payload))
 
 			ccResponse := com.Response{}
 			err := xml.Unmarshal(sdkResponse.Payload, &ccResponse)
