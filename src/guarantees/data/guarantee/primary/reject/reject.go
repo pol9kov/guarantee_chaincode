@@ -52,11 +52,28 @@ func (reject Reject) regExpCheck() bool {
 	return valid
 }
 
+func (reject Reject) NeedCreateValidation() bool {
+	if reject.Status == "validationErr" {
+		return false
+	}
+	return true
+}
+
+func (reject Reject) NeedChangeValidation() bool {
+	return reject.NeedCreateValidation()
+}
+
 func (reject Reject) CreateValidation() bool {
+	if !reject.NeedCreateValidation() {
+		return true
+	}
 	return reject.regExpCheck()
 }
 
 func (reject Reject) ChangeValidation(newRejectInterface interface{}) bool {
+	if !reject.NeedChangeValidation() {
+		return true
+	}
 	newReject := newRejectInterface.(*Reject)
 	valid := true
 

@@ -66,18 +66,15 @@ func (statement Statement) NeedCreateValidation() bool {
 	return true
 }
 
+func (statement Statement) NeedChangeValidation() bool {
+	return statement.NeedCreateValidation()
+}
+
 func (statement Statement) CreateValidation() bool {
 	if !statement.NeedCreateValidation() {
 		return true
 	}
 	return statement.regExpCheck()
-}
-
-func (statement Statement) NeedChangeValidation() bool {
-	if statement.Status == "validationErr" {
-		return false
-	}
-	return true
 }
 
 func (statement Statement) ChangeValidation(newStatementInterface interface{}) bool {

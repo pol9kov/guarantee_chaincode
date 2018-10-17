@@ -80,11 +80,28 @@ func (requirement Requirement) regExpCheck() bool {
 	return valid
 }
 
+func (requirement Requirement) NeedCreateValidation() bool {
+	if requirement.Status == "validationErr" {
+		return false
+	}
+	return true
+}
+
+func (requirement Requirement) NeedChangeValidation() bool {
+	return requirement.NeedCreateValidation()
+}
+
 func (requirement Requirement) CreateValidation() bool {
+	if !requirement.NeedCreateValidation() {
+		return true
+	}
 	return requirement.regExpCheck()
 }
 
 func (requirement Requirement) ChangeValidation(newRequirementInterface interface{}) bool {
+	if !requirement.NeedChangeValidation() {
+		return true
+	}
 	newRequirement := newRequirementInterface.(*Requirement)
 	valid := true
 

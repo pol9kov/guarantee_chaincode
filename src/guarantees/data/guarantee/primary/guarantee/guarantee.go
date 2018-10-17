@@ -68,11 +68,28 @@ func (guarantee Guarantee) regExpCheck() bool {
 	return valid
 }
 
+func (guarantee Guarantee) NeedCreateValidation() bool {
+	if guarantee.Status == "validationErr" {
+		return false
+	}
+	return true
+}
+
+func (guarantee Guarantee) NeedChangeValidation() bool {
+	return guarantee.NeedCreateValidation()
+}
+
 func (guarantee Guarantee) CreateValidation() bool {
+	if !guarantee.NeedCreateValidation() {
+		return true
+	}
 	return guarantee.regExpCheck()
 }
 
 func (guarantee Guarantee) ChangeValidation(newGuaranteeInterface interface{}) bool {
+	if !guarantee.NeedChangeValidation() {
+		return true
+	}
 	newGuarantee := newGuaranteeInterface.(*Guarantee)
 	valid := true
 
