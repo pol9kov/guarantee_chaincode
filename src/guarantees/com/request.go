@@ -5,7 +5,7 @@ import "encoding/xml"
 type Request struct {
 	XMLName xml.Name `xml:"request"`
 
-	Channels []string `xml:"channels"`
+	Channels []string `xml:"channels>channel"`
 
 	EntityName string `xml:"entity_name"`
 	Type       string `xml:"type"`
