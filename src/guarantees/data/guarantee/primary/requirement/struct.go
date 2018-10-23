@@ -32,6 +32,8 @@ type RequirementSigned struct {
 
 	Number              string                 `xml:"number"`
 	CreateDate          string                 `xml:"createDate"`
+	GuaranteeNumber     string                 `xml:"guarantee_number"`
+	GuaranteeDate       string                 `xml:"guarantee_date"`
 	Second              string                 `xml:"second"`
 	Beneficiary         additional.Beneficiary `xml:"beneficiary"`
 	Principal           additional.Principal   `xml:"principal"`
@@ -60,6 +62,8 @@ type RequirementSignedOut struct {
 
 	Number              string      `xml:"number"`
 	CreateDate          string      `xml:"createDate"`
+	GuaranteeNumber     string      `xml:"guarantee_number"`
+	GuaranteeDate       string      `xml:"guarantee_date"`
 	Second              string      `xml:"second"`
 	Beneficiary         interface{} `xml:"beneficiary"`
 	Principal           interface{} `xml:"principal"`
@@ -89,6 +93,8 @@ func (requirementSigned RequirementSigned) ToOut() interface{} {
 
 	result.Number = requirementSigned.Number
 	result.CreateDate = requirementSigned.CreateDate
+	result.GuaranteeNumber = requirementSigned.GuaranteeNumber
+	result.GuaranteeDate = requirementSigned.GuaranteeDate
 	result.Second = requirementSigned.Second
 	result.Beneficiary = (requirementSigned.Beneficiary.ToOut())
 	result.Principal = (requirementSigned.Principal.ToOut())
