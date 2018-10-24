@@ -107,8 +107,16 @@ func (requirement Requirement) ChangeValidation(newRequirementInterface interfac
 
 	valid = valid &&
 		CanChangeStatusOn(requirement.Status, newRequirement.Status)
+	if valid == false {
+		com.DebugLogMsg("Status cann't be changed from " + requirement.Status + " to " + newRequirement.Status)
+		return false
+	}
 	valid = valid &&
 		CanChangeInternalStatusOn(requirement.InternalStatus, newRequirement.InternalStatus)
+	if valid == false {
+		com.DebugLogMsg("Internal Status cann't be changed from " + requirement.Status + " to " + newRequirement.Status)
+		return false
+	}
 
 	valid = valid &&
 		newRequirement.regExpCheck()
