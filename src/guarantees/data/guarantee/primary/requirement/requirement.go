@@ -114,7 +114,7 @@ func (requirement Requirement) ChangeValidation(newRequirementInterface interfac
 	valid = valid &&
 		CanChangeInternalStatusOn(requirement.InternalStatus, newRequirement.InternalStatus)
 	if valid == false {
-		com.DebugLogMsg("Internal Status cann't be changed from " + requirement.Status + " to " + newRequirement.Status)
+		com.DebugLogMsg("Internal Status cann't be changed from " + requirement.InternalStatus + " to " + newRequirement.InternalStatus)
 		return false
 	}
 
