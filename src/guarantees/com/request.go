@@ -17,6 +17,8 @@ type Request struct {
 	FieldPaths  []FieldPath `xml:"field_paths>field_path"`
 	FieldValues []string    `xml:"field_values>field_value"`
 	/////////////////////////////////////////////
+
+	Simulate string `xml:"simulate"`
 }
 
 type FieldPath struct {

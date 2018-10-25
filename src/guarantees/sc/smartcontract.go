@@ -146,7 +146,7 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 				return com.UnmarshalError(err, args[0])
 			}
 
-			return data.Put(entity, APIstub)
+			return data.Put(entity, APIstub, request.Simulate)
 		case "FromRelationId":
 			if len(args) != 2 {
 				return com.IncorrectNumberOfArgsError(args, 2)
@@ -161,7 +161,7 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 				return response
 			}
 
-			return data.Put(entity, APIstub)
+			return data.Put(entity, APIstub, request.Simulate)
 
 		}
 
@@ -176,7 +176,7 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 			if err != nil {
 				return com.UnmarshalError(err, args[0])
 			}
-			return data.EditAll(entity, APIstub)
+			return data.EditAll(entity, APIstub, request.Simulate)
 
 		case "Fields":
 			switch request.TypeAttr {
@@ -189,7 +189,7 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 				if len(request.FieldPaths) != len(request.FieldValues) {
 					return com.IncorectNumberOfFieldsError(len(request.FieldPaths), len(request.FieldValues))
 				}
-				return data.EditFieldsById(entity, APIstub, request.FieldPaths, request.FieldValues)
+				return data.EditFieldsById(entity, APIstub, request.FieldPaths, request.FieldValues, request.Simulate)
 
 			case "ByRelationId":
 				if len(args) != 1 {
@@ -200,7 +200,7 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 				if len(request.FieldPaths) != len(request.FieldValues) {
 					return com.IncorectNumberOfFieldsError(len(request.FieldPaths), len(request.FieldValues))
 				}
-				return data.EditFieldsById(entity, APIstub, request.FieldPaths, request.FieldValues)
+				return data.EditFieldsById(entity, APIstub, request.FieldPaths, request.FieldValues, request.Simulate)
 			}
 		}
 

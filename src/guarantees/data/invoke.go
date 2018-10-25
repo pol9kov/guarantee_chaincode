@@ -10,11 +10,11 @@ import (
 	"strconv"
 )
 
-func Put(entity Entity, APIstub shim.ChaincodeStubInterface) peer.Response {
+func Put(entity Entity, APIstub shim.ChaincodeStubInterface, simulate string) peer.Response {
 	element := com.FPath.Path.PushBack(entity.GetEntityName() + ".Put")
 	defer com.FPath.Path.Remove(element)
 
-	response := putValue(entity, APIstub)
+	response := putValue(entity, APIstub, simulate)
 	if response.Status >= com.ERRORTHRESHOLD {
 		return response
 	}
@@ -28,7 +28,7 @@ func Put(entity Entity, APIstub shim.ChaincodeStubInterface) peer.Response {
 	return com.SuccessPayloadResponse(entity.ToOut())
 }
 
-func putValue(entity Entity, APIstub shim.ChaincodeStubInterface) peer.Response {
+func putValue(entity Entity, APIstub shim.ChaincodeStubInterface, simulate string) peer.Response {
 	element := com.FPath.Path.PushBack("putValue")
 	defer com.FPath.Path.Remove(element)
 
@@ -50,11 +50,19 @@ func putValue(entity Entity, APIstub shim.ChaincodeStubInterface) peer.Response 
 		return com.PutStateOnExistKeyError(entity.GetKey(), entityAsBytes)
 	}
 
-	err = APIstub.PutState(entity.GetKey(), entityAsBytes)
-	if err != nil {
-		return com.PutStateError(err, entity.GetKey(), entityAsBytes)
+	if !entity.CreateValidation() {
+		return com.EntityValidationError()
 	}
-	com.DebugLogMsg("State was put. Key: " + entity.GetKey() + "; Value: " + string(entityAsBytes))
+
+	if simulate != "true" {
+		err = APIstub.PutState(entity.GetKey(), entityAsBytes)
+		if err != nil {
+			return com.PutStateError(err, entity.GetKey(), entityAsBytes)
+		}
+		com.DebugLogMsg("State was put. Key: " + entity.GetKey() + "; Value: " + string(entityAsBytes))
+	} else {
+		com.DebugLogMsg("This is SIMULATION. State was NOT edited. Key: " + entity.GetKey() + "; Value: " + string(entityAsBytes))
+	}
 
 	return com.SuccessMessageResponse("State for " + entity.GetEntityName() + " was put.")
 }
@@ -91,7 +99,7 @@ func putIndexes(entity Entity, APIstub shim.ChaincodeStubInterface) peer.Respons
 	return com.SuccessMessageResponse("Indexes for Guarantor was created.")
 }
 
-func EditAll(entity Entity, APIstub shim.ChaincodeStubInterface) peer.Response {
+func EditAll(entity Entity, APIstub shim.ChaincodeStubInterface, simulate string) peer.Response {
 	element := com.FPath.Path.PushBack(entity.GetEntityName() + ".EditAll")
 	defer com.FPath.Path.Remove(element)
 
@@ -125,16 +133,20 @@ func EditAll(entity Entity, APIstub shim.ChaincodeStubInterface) peer.Response {
 		return com.EntityValidationError()
 	}
 
-	error := APIstub.PutState(entity.GetKey(), entityAsBytes)
-	if error != nil {
-		return com.PutStateError(err, entity.GetKey(), entityAsBytes)
+	if simulate != "true" {
+		error := APIstub.PutState(entity.GetKey(), entityAsBytes)
+		if error != nil {
+			return com.PutStateError(err, entity.GetKey(), entityAsBytes)
+		}
+		com.DebugLogMsg("State was edited. Key: " + entity.GetKey() + "; Value: " + string(entityAsBytes))
+	} else {
+		com.DebugLogMsg("This is SIMULATION. State was NOT edited. Key: " + entity.GetKey() + "; Value: " + string(entityAsBytes))
 	}
-	com.DebugLogMsg("State was edited. Key: " + entity.GetKey() + "; Value: " + string(entityAsBytes))
 
 	return com.SuccessMessageResponse(entity.GetEntityName() + " was edited.")
 }
 
-func EditFieldsById(entity Entity, APIstub shim.ChaincodeStubInterface, fieldPaths []com.FieldPath, fieldValues []string) peer.Response {
+func EditFieldsById(entity Entity, APIstub shim.ChaincodeStubInterface, fieldPaths []com.FieldPath, fieldValues []string, simulate string) peer.Response {
 	element := com.FPath.Path.PushBack(entity.GetEntityName() + "EditFieldsById")
 	defer com.FPath.Path.Remove(element)
 
@@ -151,7 +163,7 @@ func EditFieldsById(entity Entity, APIstub shim.ChaincodeStubInterface, fieldPat
 		}
 
 	}
-	return EditAll(entity, APIstub)
+	return EditAll(entity, APIstub, simulate)
 }
 
 func putAdditionalData(entity Entity, APIstub shim.ChaincodeStubInterface, additionalDataArr []string) peer.Response {
