@@ -13,7 +13,7 @@ import (
 )
 
 //todo change this trash
-func (s *SmartContract) createGuaranteeByStatementId(APIstub shim.ChaincodeStubInterface, args []string) peer.Response {
+func (s *SmartContract) createGuaranteeByStatementId(APIstub shim.ChaincodeStubInterface, args []string, simulate string) peer.Response {
 	element := com.FPath.Path.PushBack("s.createGuaranteeByStatementId")
 	defer com.FPath.Path.Remove(element)
 
@@ -99,7 +99,7 @@ func (s *SmartContract) createGuaranteeByStatementId(APIstub shim.ChaincodeStubI
 
 	guaranteeObject.Status = "validationErr"
 
-	data.Put(&guaranteeObject, APIstub)
+	data.Put(&guaranteeObject, APIstub, simulate)
 
 	guaranteeOutObject := guaranteeObject.ToOut()
 

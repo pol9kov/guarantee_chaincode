@@ -238,7 +238,7 @@ func (s *SmartContract) Invoke(APIstub shim.ChaincodeStubInterface) peer.Respons
 	function = function + request.EntityName + request.Type + request.TypeAttr
 
 	if function == "createGuaranteeByStatementId" {
-		return s.createGuaranteeByStatementId(APIstub, args)
+		return s.createGuaranteeByStatementId(APIstub, args, request.Simulate)
 	}
 
 	if function == "queryStatementWithGType" {
