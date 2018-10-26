@@ -62,6 +62,7 @@ type Par struct {
 	Disabled               string                `xml:"disabled,attr,omitempty"`
 	Required               string                `xml:"required,attr,omitempty"`
 	Group                  string                `xml:"group,attr,omitempty"`
+	Subgroup               string                `xml:"subgroup,attr,omitempty"`
 	GroupOrder             string                `xml:"group_order,attr,omitempty"`
 	Options                []Option              `xml:"option,omitempty"`
 	DisabledConditionLogic string                `xml:"disabled_condition_logic,attr,omitempty"`
