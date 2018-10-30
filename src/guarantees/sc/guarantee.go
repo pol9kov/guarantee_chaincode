@@ -3,17 +3,17 @@ package sc
 import (
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	"github.com/hyperledger/fabric/protos/peer"
-	"guarantees/com"
-	"guarantees/data"
-	"guarantees/data/guarantee/additional"
-	"guarantees/data/guarantee/additional/bankpars"
-	"guarantees/data/guarantee/primary/guarantee"
-	"guarantees/data/guarantee/primary/statement"
+	"guarantees/data/additional"
+	"guarantees/data/additional/bankpars"
+	"guarantees/data/primary/guarantee"
+	"guarantees/data/primary/statement"
+	"platform/com"
+	"platform/data"
 	"regexp"
 )
 
 //todo change this trash
-func (s *SmartContract) createGuaranteeByStatementId(APIstub shim.ChaincodeStubInterface, args []string, simulate string) peer.Response {
+func CreateGuaranteeByStatementId(APIstub shim.ChaincodeStubInterface, args []string, simulate string) peer.Response {
 	element := com.FPath.Path.PushBack("s.createGuaranteeByStatementId")
 	defer com.FPath.Path.Remove(element)
 
