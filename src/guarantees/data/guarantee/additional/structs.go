@@ -75,6 +75,7 @@ type Par struct {
 type Option struct {
 	XMLName xml.Name `xml:"option"`
 
+	Code              string             `xml:"code,attr,omitempty"`
 	Value             string             `xml:"value,attr,omitempty"`
 	Chosen            string             `xml:"chosen,attr,omitempty"`
 	Detailed          string             `xml:"detailed,attr,omitempty"`
