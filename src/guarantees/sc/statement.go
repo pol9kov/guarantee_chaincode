@@ -4,14 +4,14 @@ import (
 	"encoding/xml"
 	"github.com/hyperledger/fabric/core/chaincode/shim"
 	"github.com/hyperledger/fabric/protos/peer"
-	"guarantees/com"
-	"guarantees/data"
-	"guarantees/data/guarantee/additional/gtype"
-	"guarantees/data/guarantee/primary/statement"
+	"guarantees/data/additional/gtype"
+	"guarantees/data/primary/statement"
+	"platform/com"
+	"platform/data"
 )
 
 //todo change this trash
-func (s *SmartContract) queryStatementWithGType(APIstub shim.ChaincodeStubInterface, args []string) peer.Response {
+func QueryStatementWithGType(APIstub shim.ChaincodeStubInterface, args []string) peer.Response {
 	element := com.FPath.Path.PushBack("s.queryStatementWithGType")
 	defer com.FPath.Path.Remove(element)
 
