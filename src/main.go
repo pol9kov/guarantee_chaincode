@@ -1,4 +1,4 @@
-package platform
+package src
 
 import (
 	"github.com/hyperledger/fabric/core/chaincode/shim"
