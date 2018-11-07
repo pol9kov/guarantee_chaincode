@@ -14,6 +14,6 @@
 *.out
 
 src/github.com/
-/src/guarantees_test/
+/src/guarantees/guarantees_test/
 /src/github.com/
 /.idea/workspace.xml

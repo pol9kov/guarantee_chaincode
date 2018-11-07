@@ -1,0 +1,113 @@
+<requirement>
+    <id>AFJFUVVJUkVNRU5UADEA</id>
+    <status></status>
+    <internal_status></internal_status>
+    <guarantee_id>AEdVQVJBTlRFRQAxAA==</guarantee_id>
+    <plan_execution_date></plan_execution_date>
+    <update_date></update_date>
+    <primary_id></primary_id>
+    <beneficiary_signature></beneficiary_signature>
+    <requirement_signed>
+        <number></number>
+        <createDate></createDate>
+        <guarantee_number></guarantee_number>
+        <guarantee_date></guarantee_date>
+        <second></second>
+        <beneficiary>
+            <organization>
+                <id></id>
+                <msp_id></msp_id>
+                <inn>7708503727</inn>
+                <ogrn>1037739877295</ogrn>
+                <kpp>770801001</kpp>
+                <okved>49.10</okved>
+                <full_name>Открытое акционерное общество «Российские железные дороги»</full_name>
+                <name>ОАО «РЖД»</name>
+                <address>107174, г Москва, улица Басманная Нов., дом 2</address>
+            </organization>
+        </beneficiary>
+        <principal>
+            <organization>
+                <id></id>
+                <msp_id></msp_id>
+                <inn>7706107510</inn>
+                <ogrn>1027700043502</ogrn>
+                <kpp>77060100</kpp>
+                <okved>06.10.1</okved>
+                <full_name>Публичное Акционерное Общество Нефтяная компания «Роснефть»</full_name>
+                <name>ПАО НК «Роснефть»</name>
+                <address>115035, г Москва, набережная Софийская, 26/1</address>
+            </organization>
+            <delegate>
+                <fio>Иванов Иван Иванович</fio>
+                <post>Главный бухгалтер</post>
+                <username>Ivanov_ii</username>
+            </delegate>
+        </principal>
+        <guarantor>
+            <id></id>
+            <msp_id></msp_id>
+            <inn>7707083893</inn>
+            <ogrn>1027700132195</ogrn>
+            <kpp>773601001</kpp>
+            <okved>64.19</okved>
+            <full_name>Публичное акционерное общество «Сбербанк России»</full_name>
+            <name>ПАО Сбербанк</name>
+            <address>Россия, Москва, 117997, ул. Вавилова, д. 19</address>
+            <bik>044525225</bik>
+            <korr_acc>30101810400000000225</korr_acc>
+            <license>Генеральная лицензия Банка России на осуществление банковских операций №1481 от 11.08.2015 г.</license>
+        </guarantor>
+        <requirement_template>
+            <id></id>
+            <guarantor_id></guarantor_id>
+            <name>Требования</name>
+            <description>Требование (не по 44-ФЗ)</description>
+            <pars>
+                <par name="guaranteeNumber" value="" regular_expression="" caption="Номер гарантии" display_type="?"
+                     required="true"></par>
+                <par name="requirement_date" value="" regular_expression="" caption="Дата подачи требования"
+                     display_type="dateInput" required="true"></par>
+                <par name="amount" value="0,00" regular_expression="" caption="Сумма требования"
+                     display_type="amountInput" required="true"></par>
+                <par name="currency" value="" regular_expression="" caption="Валюта требования" display_type=""
+                      required="true"></par>
+                <par name="unexecuted_obligations" value="" regular_expression=""
+                     caption="Перечень обязательств, неисполненых принципалом" display_type="textArea"
+                     placeholder="Укажите конкретные неисполненные обязательства Принципала"
+                     required="true"></par>
+                <par name="topay_penalty" value="" regular_expression="" caption="Обязательство уплатить неустойку"
+                     display_type="checkbox" default_value="true" required="false"></par>
+                <par name="amount_penalty" value="0,00" regular_expression="" caption="Сумма требования"
+                     display_type="amountInput" required="true"></par>
+                <par name="currency_penalty" value="" regular_expression="" caption="Валюта требования" display_type=""
+                     required="true"></par>
+                <par name="beneficiary_accounte" value="" regular_expression="" caption="Расчетный счет"
+                     display_type="textInput"
+                     placeholder="Укажите номер расчетного счета, на который необходимо произвести оплату"
+                     required="false" group="Реквизиты для оплаты"></par>
+                <par name="beneficiary_bank" value="" regular_expression="" caption="Наименование банка"
+                     display_type="textInput" placeholder="Укажите банк, в котором открыт расчетный счет"
+                     required="false" group="Реквизиты для оплаты"></par>
+                <par name="bank_bik" value="" regular_expression="" caption="БИК" display_type="textInput"
+                     placeholder="Укажите БИК банка, в котором открыт расчетный счет" required="false"
+                     group="Реквизиты для оплаты"></par>
+                <par name="bank_okpo" value="" regular_expression="" caption="ОКПО" display_type="textInput"
+                     placeholder="Укажите ОКПО банка, в котором открыт расчетный счет" required="false"
+                     group="Реквизиты для оплаты"></par>
+                <par name="bank_korr_acc" value="" regular_expression="" caption="Корсчет банка"
+                     display_type="textInput" placeholder="Укажите К/С банка" required="false"
+                     group="Реквизиты для оплаты"></par>
+                <par name="docs4requirement" value="" regular_expression="" caption="" display_type="multiCheckbox"
+                     required="true" group="Документы по требованию">
+                    <option chosen="true"></option>
+                    <option chosen="true"></option>
+                </par>
+                <par name="otherConditions" value="" regular_expression="" caption="Дополнительная информация"
+                     display_type="textArea"
+                     placeholder="Введите дополнительную информацию, которую хотите сообщить банку" required="false"
+                    ></par>
+            </pars>
+        </requirement_template>
+    </requirement_signed>
+</requirement>

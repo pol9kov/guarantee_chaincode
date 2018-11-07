@@ -1,0 +1,56 @@
+<bank_pars>
+    <par name="agreementNumber"
+         value=""
+         regular_expression=""
+         caption="Номер гарантии"
+         display_type="textInput"
+         placeholder="Введите номер"
+         required="true"
+         group="Шапка"
+         group_order="0">
+    </par>
+    <par name="city"
+         value=""
+         regular_expression=""
+         caption="Город выдачи"
+         display_type="textInput"
+         placeholder="Введите город"
+         required="true"
+         group="Шапка"
+         group_order="0">
+    </par>
+    <par name="guarantorFio"
+         value=""
+         regular_expression=""
+         caption="ФИО уполномоченного лица"
+         display_type="textInput"
+         placeholder="Введите ФИО"
+         required="true"
+         group="Шапка"
+         group_order="0">
+    </par>
+    <par name="guarantorPost"
+         value=""
+         regular_expression=""
+         caption="Должность уполномоченного лица"
+         display_type="textInput"
+         placeholder="Введите должность"
+         required="true"
+         group="Шапка"
+         group_order="0">
+    </par>
+    <par name="docDelegate"
+         value=""
+         regular_expression=""
+         caption="Документ-основание"
+         display_type="select"
+         placeholder="Введите документ-основание"
+         required="true"
+         group="Шапка"
+         group_order="0">
+        <option value="Доверенность"></option>
+        <option value="Иное"
+                detailed="true"
+                detailed_value=" "></option>
+    </par>
+</bank_pars>

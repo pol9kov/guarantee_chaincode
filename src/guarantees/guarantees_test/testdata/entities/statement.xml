@@ -1,0 +1,711 @@
+<statement>
+    <id>AFNUQVRFTUVOVAAxAA==</id>
+    <status>created</status>
+    <principal_signature>e72ee84b996b4b1bae531e6b93bd296458327c6f96813b5c9382605c2e33b77aa70b031fe314c2ce18fe512f4dc3e200629cbed24a0757465e26169e7ae6e0ac</principal_signature>
+    <statement_signed>
+        <number>7706107510-001</number>
+        <createDate>23/05/2018</createDate>
+        <principal>
+            <organization>
+                <id></id>
+                <msp_id></msp_id>
+                <inn>7706107510</inn>
+                <ogrn>1027700043502</ogrn>
+                <kpp>77060100</kpp>
+                <okved>06.10.1</okved>
+                <full_name>Публичное Акционерное Общество Нефтяная компания «Роснефть»</full_name>
+                <name>ПАО НК «Роснефть»</name>
+                <address>115035, г Москва, набережная Софийская, 26/1</address>
+            </organization>
+            <delegate>
+                <fio>Иванов Иван Иванович</fio>
+                <post>Главный бухгалтер</post>
+                <username>Ivanov_ii</username>
+            </delegate>
+        </principal>
+        <beneficiary>
+            <organization>
+                <id></id>
+                <msp_id></msp_id>
+                <inn>7708503727</inn>
+                <ogrn>1037739877295</ogrn>
+                <kpp>770801001</kpp>
+                <okved>49.10</okved>
+                <full_name>Открытое акционерное общество «Российские железные дороги»</full_name>
+                <name>ОАО «РЖД»</name>
+                <address>107174, г Москва, улица Басманная Нов., дом 2</address>
+            </organization>
+        </beneficiary>
+        <guarantor>
+            <id></id>
+            <msp_id></msp_id>
+            <inn>7707083893</inn>
+            <ogrn>1027700132195</ogrn>
+            <kpp>773601001</kpp>
+            <okved>64.19</okved>
+            <full_name>Публичное акционерное общество «Сбербанк России»</full_name>
+            <name>ПАО Сбербанк</name>
+            <address>Россия, Москва, 117997, ул. Вавилова, д. 19</address>
+            <bik>044525225</bik>
+            <korr_acc>30101810400000000225</korr_acc>
+            <license>Генеральная лицензия Банка России на осуществление банковских операций №1481 от 11.08.2015 г.</license>
+        </guarantor>
+        <gtype>
+            <id>AEdUWVBFXwBPcmcxTVNQANCU0L7Qs9C+0LLQvtGA0L3QsNGPINCz0LDRgNCw0L3RgtC40Y8A</id>
+            <guarantor_id>AEdVQVJBTlRPUl8ANzcwNzA4Mzg5MwA3NzM2MDEwMDEA</guarantor_id>
+            <name>Договорная гарантия</name>
+            <description>Договорная гарантия - описание.</description>
+            <pars>
+                <par name="obligations"
+                     value=""
+                     regular_expression=""
+                     caption="Контракт содержит обязательства"
+                     display_type="multiCheckbox"
+                     default_value="Закон, в рамках которого заключается договор"
+                     required="true"
+                     group="Обязательства"
+                     group_order="10">
+                    <option value="Основное обязательство (кроме обязательства по возврату авансового платежа, уплаты неустоек (пеней, штрафов), возмещения убытков, гарантийных обязательств)"
+                            chosen="false">
+                    </option>
+                    <option value="Возврат авансового платежа"
+                            chosen="false">
+                    </option>
+                    <option value="Гарантийное обслуживание"
+                            chosen="false">
+                    </option>
+                    <option value="Уплата неустоек (пеней, штрафов)"
+                            chosen="false">
+                    </option>
+                    <option value="Возмещения убытков"
+                            chosen="false">
+                    </option>
+                    <option value="Иные обязательства"
+                            chosen="false"
+                            detailed="true"
+                            detailed_value=" ">
+                    </option>
+                </par>
+                <par name="obligationsCausedByG"
+                     value=""
+                     regular_expression=""
+                     caption="Обязательства, исполнение которых обеспечивается гарантией"
+                     display_type="multiCheckbox"
+                     required="true"
+                     group="Обязательства"
+                     group_order="10">
+                    <option value="Основное обязательство (кроме обязательства по возврату авансового платежа, уплаты неустоек (пеней, штрафов), возмещения убытков, гарантийных обязательств)"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Основное обязательство (кроме обязательства по возврату авансового платежа, уплаты неустоек (пеней, штрафов), возмещения убытков, гарантийных обязательств)"
+                                           chosen="true">
+                        </visible_condition>
+                    </option>
+                    <option value="Возврат авансового платежа"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Возврат авансового платежа"
+                                           chosen="true">
+                        </visible_condition>
+                    </option>
+                    <option value="Гарантийное обслуживание"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Гарантийное обслуживание"
+                                           chosen="true">
+                        </visible_condition>
+                    </option>
+                    <option value="Уплата неустоек (пеней, штрафов)"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Уплата неустоек (пеней, штрафов)"
+                                           chosen="true">
+                        </visible_condition>
+                    </option>
+                    <option value="Возмещения убытков"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Возмещения убытков"
+                                           chosen="true">
+                        </visible_condition>
+                    </option>
+                    <option value="Иные обязательства"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Иные обязательства"
+                                           chosen="true">
+                        </visible_condition>
+                    </option>
+                </par>
+                <par name="obligationsNotCausedByG"
+                     value=""
+                     regular_expression=""
+                     caption="Обязательства, исполнение которых не обеспечивается гарантией"
+                     display_type="multiCheckbox"
+                     visible_default_value="true"
+                     disabled="true"
+                     required="false"
+                     group="Обязательства"
+                     group_order="10">
+                    <option value="Основное обязательство (кроме обязательства по возврату авансового платежа, уплаты неустоек (пеней, штрафов), возмещения убытков, гарантийных обязательств)"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Основное обязательство (кроме обязательства по возврату авансового платежа, уплаты неустоек (пеней, штрафов), возмещения убытков, гарантийных обязательств)"
+                                           chosen="true">
+                        </visible_condition>
+                        <visible_condition name="obligationsNotCausedByG"
+                                           value="Основное обязательство (кроме обязательства по возврату авансового платежа, уплаты неустоек (пеней, штрафов), возмещения убытков, гарантийных обязательств)"
+                                           chosen="false">
+                        </visible_condition>
+                    </option>
+                    <option value="Возврат авансового платежа"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Возврат авансового платежа"
+                                           chosen="true">
+                        </visible_condition>
+                        <visible_condition name="obligationsNotCausedByG"
+                                           value="Возврат авансового платежа"
+                                           chosen="false">
+                        </visible_condition>
+                    </option>
+                    <option value="Гарантийное обслуживание"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Гарантийное обслуживание"
+                                           chosen="true">
+                        </visible_condition>
+                        <visible_condition name="obligationsNotCausedByG"
+                                           value="Гарантийное обслуживание"
+                                           chosen="false">
+                        </visible_condition>
+                    </option>
+                    <option value="Уплата неустоек (пеней, штрафов)"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Уплата неустоек (пеней, штрафов)"
+                                           chosen="true">
+                        </visible_condition>
+                        <visible_condition name="obligationsNotCausedByG"
+                                           value="Уплата неустоек (пеней, штрафов)"
+                                           chosen="false">
+                        </visible_condition>
+                    </option>
+                    <option value="Возмещения убытков"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Возмещения убытков"
+                                           chosen="true">
+                        </visible_condition>
+                        <visible_condition name="obligationsNotCausedByG"
+                                           value="Возмещения убытков"
+                                           chosen="false">
+                        </visible_condition>
+                    </option>
+                    <option value="Иные обязательства"
+                            chosen="false">
+                        <visible_condition name="obligations"
+                                           value="Иные обязательства"
+                                           chosen="true">
+                        </visible_condition>
+                        <visible_condition name="obligationsNotCausedByG"
+                                           value="Иные обязательства"
+                                           chosen="false">
+                        </visible_condition>
+                    </option>
+                </par>
+                <par name="agreementNumber"
+                     value="123456"
+                     regular_expression=""
+                     caption="Номер договора о предоставлении гарантий"
+                     display_type="textInput"
+                     placeholder="Введите номер"
+                     required="true"
+                     group="Договор о предоставлении гарантий"
+                     group_order="20">
+                </par>
+                <par name="agreementDate"
+                     value="01/02/2017"
+                     regular_expression=""
+                     caption="Дата договора"
+                     display_type="textInput"
+                     required="true"
+                     group="Договор о предоставлении гарантий"
+                     group_order="20">
+                </par>
+                <par name="contractDescription"
+                     value=""
+                     regular_expression=""
+                     caption="Наименование Контракта"
+                     display_type="textArea"
+                     placeholder="Например: Договор подряда на выполнение строительно-монтажных работ"
+                     required="true"
+                     group="Условия Контракта"
+                     group_order="30">
+                </par>
+                <par name="law"
+                     value="Без специфики"
+                     regular_expression=""
+                     caption="Нормативное регулирование обязательства"
+                     display_type="select"
+                     default_value="Без дополнительных требований"
+                     required="true"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <option value="Без дополнительных требований">
+                    </option>
+                    <option value="223-ФЗ">
+                    </option>
+                    <option value="44-ФЗ">
+                    </option>
+                </par>
+                <par name="causeGuaranteeCreation"
+                     value="Контракт, планируемый к заключению"
+                     regular_expression=""
+                     caption="Статус контракта"
+                     display_type="select"
+                     placeholder="Выберите вариант"
+                     required="true"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <option value="Контракт заключенный">
+                    </option>
+                    <option value="Контракт, планируемый к заключению">
+                    </option>
+                </par>
+                <par name="contractNumber"
+                     value=""
+                     regular_expression=""
+                     caption="Номер Контракта"
+                     display_type="textInput"
+                     placeholder="Введите номер"
+                     required="true"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <visible_condition name="causeGuaranteeCreation"
+                                       value="Контракт заключенный">
+                    </visible_condition>
+                </par>
+                <par name="contractDate"
+                     value=""
+                     regular_expression=""
+                     caption="Дата"
+                     display_type="dateInput"
+                     required="true"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <visible_condition name="causeGuaranteeCreation"
+                                       value="Контракт заключенный">
+                    </visible_condition>
+                </par>
+                <par name="tenderType"
+                     value="Открытый конкурс"
+                     regular_expression=""
+                     caption="Вид тендера"
+                     display_type="select"
+                     placeholder="Выберите вид тендера"
+                     required="true"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <option value="Электронный аукцион">
+                    </option>
+                    <option value="Открытый конкурс">
+                    </option>
+                    <option value="Закрытый конкурс">
+                    </option>
+                </par>
+                <par name="tenderName"
+                     value="На право заключения договора поставки топлива на второе полугодие 2018г"
+                     regular_expression=""
+                     caption="Название тендера"
+                     display_type="textInput"
+                     placeholder="Введите название"
+                     required="false"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <visible_condition name="tenderType"
+                                       value="Электронный аукцион"
+                                       type="OR">
+                    </visible_condition>
+                    <visible_condition name="tenderType"
+                                       value="Открытый конкурс"
+                                       type="OR">
+                    </visible_condition>
+                    <visible_condition name="tenderType"
+                                       value="Закрытый конкурс"
+                                       type="OR">
+                    </visible_condition>
+                </par>
+                <par name="noticeNumber"
+                     value="1234"
+                     regular_expression=""
+                     caption="Номер извещения"
+                     display_type="textInput"
+                     placeholder="Введите номер"
+                     required="false"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <visible_condition name="causeGuaranteeCreation"
+                                       value="Контракт, планируемый к заключению">
+                    </visible_condition>
+                </par>
+                <par name="noticeDate"
+                     value=""
+                     regular_expression=""
+                     caption="Дата извещения"
+                     display_type="dateInput"
+                     required="false"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <visible_condition name="causeGuaranteeCreation"
+                                       value="Контракт, планируемый к заключению">
+                    </visible_condition>
+                </par>
+                <par name="lotNumber"
+                     value=""
+                     regular_expression=""
+                     caption="Номер лота"
+                     display_type="textInput"
+                     placeholder="Введите номер"
+                     required="false"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <visible_condition name="causeGuaranteeCreation"
+                                       value="Контракт, планируемый к заключению">
+                    </visible_condition>
+                </par>
+                <par name="lotName"
+                     value=""
+                     regular_expression=""
+                     caption="Наименование  лота"
+                     display_type="textInput"
+                     placeholder="Введите наименование"
+                     required="false"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <visible_condition name="causeGuaranteeCreation"
+                                       value="Контракт, планируемый к заключению">
+                    </visible_condition>
+                </par>
+                <par name="purchaseId"
+                     value=""
+                     regular_expression=""
+                     caption="Идентификационный код закупки"
+                     display_type="textInput"
+                     placeholder="Введите код"
+                     required="false"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <visible_condition name="causeGuaranteeCreation"
+                                       value="Контракт, планируемый к заключению">
+                    </visible_condition>
+                </par>
+                <par name="protocolNumber"
+                     value="5555555"
+                     regular_expression=""
+                     caption="Номер протокола"
+                     display_type="textInput"
+                     placeholder="Введите номер"
+                     required="false"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <visible_condition name="causeGuaranteeCreation"
+                                       value="Контракт, планируемый к заключению">
+                    </visible_condition>
+                </par>
+                <par name="protocolDate"
+                     value="15/05/2018"
+                     regular_expression=""
+                     caption="Дата протокола"
+                     display_type=" dateInput"
+                     required="false"
+                     group="Условия Контракта"
+                     group_order="30">
+                    <visible_condition name="causeGuaranteeCreation"
+                                       value="Контракт, планируемый к заключению">
+                    </visible_condition>
+                </par>
+                <par name="amount"
+                     value="1350000000"
+                     regular_expression=""
+                     caption="Сумма гарантии"
+                     display_type="amountInput"
+                     required="true"
+                     group="Основные условия Гарантии"
+                     group_order="40">
+                </par>
+                <par name="currency"
+                     value="RUB"
+                     regular_expression=""
+                     caption="Валюта гарантии"
+                     display_type="select"
+                     default_value="RUB"
+                     required="true"
+                     group="Основные условия Гарантии"
+                     group_order="40">
+                    <option value="RUB">
+                    </option>
+                    <option value="USD">
+                    </option>
+                    <option value="EUR">
+                    </option>
+                </par>
+                <par name="planIssueDate"
+                     value="01/06/2018"
+                     regular_expression=""
+                     caption="Предполагаемая дата выдачи гарантии"
+                     display_type="dateInput"
+                     required="true"
+                     group="Основные условия Гарантии"
+                     group_order="40">
+                </par>
+                <par name="entryIntoForceCondition"
+                     value="С даты заключения контракта"
+                     regular_expression=""
+                     caption="Условие вступления в силу"
+                     display_type="select"
+                     default_value="С даты"
+                     group="Основные условия Гарантии"
+                     group_order="40">
+                    <option value="С даты">
+                    </option>
+                    <option value="С даты выдачи">
+                    </option>
+                    <option value="С даты заключения контракта">
+                    </option>
+                    <option value="С даты зачисления аванса на счет Принципала">
+                        <visible_condition name="obligationsCausedByG"
+                                           value="Возврат авансового платежа"
+                                           chosen="true">
+                        </visible_condition>
+                    </option>
+                    <option value="Иное"
+                            detailed="true"
+                            detailed_value=" ">
+                    </option>
+                </par>
+                <par name="entryIntoForceDate"
+                     value="23/05/2018"
+                     regular_expression=""
+                     caption=""
+                     display_type="dateInput"
+                     required="true"
+                     group="Основные условия Гарантии"
+                     group_order="40">
+                    <visible_condition name="entryIntoForceCondition"
+                                       value="С даты">
+                    </visible_condition>
+                </par>
+                <par name="expirationDate"
+                     value="30/07/2018"
+                     regular_expression=""
+                     caption="Дата окончания действия"
+                     display_type="expirationDateInput"
+                     required="true"
+                     group="Основные условия Гарантии"
+                     group_order="40"
+                     disabled_condition_logic="OR">
+                    <disabled_condition name="entryIntoForceCondition"
+                                        value="С даты заключения контракта">
+                    </disabled_condition>
+                    <disabled_condition name="entryIntoForceCondition"
+                                        value="С даты зачисления аванса на счет Принципала">
+                    </disabled_condition>
+                    <disabled_condition name="entryIntoForceCondition"
+                                        value="Иное">
+                    </disabled_condition>
+                </par>
+                <par name="inclusive"
+                     value="true"
+                     regular_expression=""
+                     caption="Включительно"
+                     display_type=""
+                     default_value="true"
+                     required="false"
+                     group="Основные условия Гарантии"
+                     group_order="40">
+                </par>
+                <par name="period"
+                     value=""
+                     regular_expression=""
+                     caption=""
+                     display_type="periodInput"
+                     required="true"
+                     group="Основные условия Гарантии"
+                     group_order="40">
+                </par>
+                <par name="periodUnit"
+                     value=""
+                     regular_expression=""
+                     caption=""
+                     display_type="periodUnitInput"
+                     default_value="Месяцы"
+                     required="true"
+                     group="Основные условия Гарантии"
+                     group_order="40">
+                    <option value="Дни">
+                    </option>
+                    <option value="Месяцы">
+                    </option>
+                    <option value="Годы">
+                    </option>
+                </par>
+                <par name="obligationReductionCondition"
+                     value=""
+                     regular_expression=""
+                     caption="Условия уменьшения суммы гарантии"
+                     display_type="multiCheckbox"
+                     required="false"
+                     group="Условия уменьшения суммы гарантии"
+                     group_order="50">
+                    <option
+                            value="В связи с каждым частичным выполнением Принципалом обязательств по выполнению работ/услуг, предусмотренных Контрактом"
+                            chosen="false">
+                    </option>
+                    <option
+                            value="На общую сумму платежей Принципала, произведенных в погашение его обязательств по контракту"
+                            chosen="true">
+                    </option>
+                    <option
+                            value="На сумму платежей Принципала, произведенных в погашение его обязательств по возврату авансового платежа по Контракту"
+                            chosen="false">
+                    </option>
+                    <option value="Иное"
+                            chosen="false"
+                            detailed="true"
+                            detailed_value=" ">
+                    </option>
+                </par>
+                <par name="changeWhithoutAgreementРossibility"
+                     value="true"
+                     regular_expression=""
+                     caption="Гарант вправе внести изменения в условия Гарантии без согласования с Бенефициаром в случае обращения Принципала к Гаранту с просьбой"
+                     display_type="checkbox"
+                     default_value="false"
+                     required="true"
+                     group="Изменение условий Гарантии"
+                     group_order="60">
+                </par>
+                <par name="changeWhithoutAgreementСondition"
+                     value=""
+                     regular_expression=""
+                     caption="Изменения"
+                     display_type="multiCheckbox"
+                     required="true"
+                     group="Изменение условий Гарантии"
+                     group_order="60">
+                    <option value="увеличение суммы Гарантии"
+                            chosen="false">
+                    </option>
+                    <option value="увеличение срока действия Гарантии"
+                            chosen="false">
+                    </option>
+                    <visible_condition name="changeWhithoutAgreementРossibility"
+                                       value="true">
+                    </visible_condition>
+                </par>
+                <par name="changeWhithAgreementРossibility"
+                     value="true"
+                     regular_expression=""
+                     caption="Иные изменения возможны с письменного согласия Бенифициара по инициативе Гаранта или Принципала"
+                     display_type="checkbox"
+                     default_value="false"
+                     required="true"
+                     group="Изменение условий Гарантии"
+                     group_order="60">
+                </par>
+                <par name="claimTransferPossibility"
+                     value=""
+                     regular_expression=""
+                     caption="Возможность передачи права требования"
+                     display_type="checkbox"
+                     default_value="false"
+                     required="true"
+                     group="Изменение условий Гарантии"
+                     group_order="60">
+                </par>
+                <par name="requirementChannel"
+                     value="true"
+                     regular_expression=""
+                     caption="Форма подачи требования"
+                     display_type="checkbox"
+                     placeholder="Выберите значение"
+                     default_value="true"
+                     disabled="true"
+                     required="true"
+                     group="Требование"
+                     group_order="70">
+                </par>
+                <par name="docs4requirement"
+                     value=""
+                     regular_expression=""
+                     caption="Документы, которые должны быть приложены к требованию"
+                     display_type="multiCheckbox"
+                     required="true"
+                     group="Требование"
+                     group_order="70">
+                    <option value="Расчет суммы, включаемой в требование по банковской гарантии"
+                            chosen="true">
+                    </option>
+                    <option value="Документ, подтверждающий полномочия единоличного исполнительного органа (или иного уполномоченного лица), подписавшего требование платежа по банковской гарантии (решение об избрании, приказ о назначении, доверенность)"
+                            chosen="true">
+                    </option>
+                    <option value="Документ, подтверждающий факт наступления гарантийного случая в соответствии с условиями Контракта"
+                            chosen="false">
+                    </option>
+                    <option value="Документы, подтверждающие неисполнение/нарушение Принципалом обязательств по Договору за соответствующий период, в котором предъявляется требование Бенефициаром"
+                            chosen="false"
+                            detailed="true"
+                            detailed_value=" ">
+                    </option>
+                    <option value="Документы, свидетельствующие о выполнении Бенефициаром своих обязательств по Договору/Контракту/Тендеру"
+                            chosen="false"
+                            detailed="true"
+                            detailed_value=" ">
+                    </option>
+                    <option value="Договор, со всеми дополнительными соглашениями и приложениями (оригинал или нотариально заверенная копия)"
+                            chosen="true">
+                    </option>
+                    <option value="Претензия Бенефициара, направленная в адрес Принципала, о нарушении Принципалом обязательств по Договору и с требованием об оплате неустоек (пени, штрафов)"
+                            chosen="false">
+                    </option>
+                    <option value="Соглашение Бенефициара и Ппринципала о расторжении Договора (оригинал или нотариально заверенная копия)"
+                            chosen="false">
+                    </option>
+                    <option
+                            value="Нотариально заверенная копия судебного решения арбитражного суда Российской Федерации о расторжении Договора"
+                            chosen="false">
+                    </option>
+                    <option value="Заверенные Бенефициаром копии платежных документов, подтверждающих перечисление Бенефициаром гарантируемого аванса Принципалу на расчетный счет, содержащие указания на Договор"
+                            chosen="true">
+                    </option>
+                    <option value="Иное"
+                            chosen="false"
+                            detailed="true"
+                            detailed_value=" ">
+                    </option>
+                </par>
+                <par name="otherConditions"
+                     value=""
+                     regular_expression=""
+                     caption="Прочие условия"
+                     display_type="textArea"
+                     required="false"
+                     group="Прочие условия"
+                     group_order="80">
+                </par>
+                <par name="bkiAgreement"
+                     value="true"
+                     regular_expression=""
+                     caption="Согласие на передачу в Бюро Кредитных Историй"
+                     display_type="checkbox"
+                     default_value="true"
+                     disabled="true"
+                     required="true"
+                     group="ungrouped"
+                     group_order="90">
+                </par>
+            </pars>
+        </gtype>
+    </statement_signed>
+</statement>
