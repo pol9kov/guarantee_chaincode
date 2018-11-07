@@ -101,7 +101,5 @@ func CreateGuaranteeByStatementId(APIstub shim.ChaincodeStubInterface, args []st
 
 	data.Put(&guaranteeObject, APIstub, simulate)
 
-	guaranteeOutObject := guaranteeObject.ToOut()
-
-	return com.SuccessPayloadResponse(&guaranteeOutObject)
+	return com.SuccessPayloadResponse(guaranteeObject.ToOut())
 }
