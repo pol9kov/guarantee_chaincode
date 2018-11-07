@@ -1,4 +1,4 @@
-package src
+package guarantees
 
 import (
 	"github.com/hyperledger/fabric/core/chaincode/shim"
